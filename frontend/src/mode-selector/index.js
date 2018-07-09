@@ -1,14 +1,15 @@
 import React from 'react';
 import './mode-selector.css';
+import ModeSelectionTile from './mode-selection-tile';
 
 export default function ModeSelector(props) {
     return (
-        <div className="modeSelectorTile text-center border border-dark rounded d-flex flex-column">
-            <div>
-                <img src={props.img} alt=""/>
+        <div className="row row-eq-height">
+            <div className="offset-xs-2 col-xs-8 offset-sm-1 col-sm-5">
+                <ModeSelectionTile text="Create a character" img="create-character.jpg" link='/character/create'/>
             </div>
-            <div>
-                <span>{props.text}</span>
+            <div className="offset-xs-2 col-xs-8 col-sm-5">
+                <ModeSelectionTile text="Use existing character" img="edit-character.jpg" link='/character/open'/>
             </div>
         </div>
     );

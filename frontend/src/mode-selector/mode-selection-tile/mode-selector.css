@@ -1,13 +1,11 @@
 .modeSelectorTile {
     margin: 2px;
     padding: 2px;
-    text-decoration: none;
 }
 
 .modeSelectorTile:hover {
     margin: 1px;
     border-color: green !important;
-    text-decoration: none;
 }
 
 .modeSelectorTile img {
