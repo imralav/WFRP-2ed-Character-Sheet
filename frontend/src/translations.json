@@ -1,10 +1,12 @@
 {
   "pl": {
     "create-character": "Stwórz postać",
-    "use-existing-character": "Wykorzystaj istniejącą postać"
+    "use-existing-character": "Wykorzystaj istniejącą postać",
+    "navigation.home": "Start"
   },
   "en": {
     "create-character": "Create a character",
-    "use-existing-character": "Use an existing character"
+    "use-existing-character": "Use an existing character",
+    "navigation.home": "Home"
   }
 }
