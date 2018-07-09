@@ -5,6 +5,7 @@
 
 .modeSelectorTile:hover {
     margin: 1px;
+    padding: 3px;
     border-color: green !important;
 }
 

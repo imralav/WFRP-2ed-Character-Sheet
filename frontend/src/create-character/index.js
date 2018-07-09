@@ -1,7 +1,10 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
-export default function CreateCharacter(props) {
+export default () => {
     return (
-        <div>CreateCharacter</div>
+        <div>
+            <FormattedMessage id="create-character" default="Create character"/>
+        </div>
     );
 }
