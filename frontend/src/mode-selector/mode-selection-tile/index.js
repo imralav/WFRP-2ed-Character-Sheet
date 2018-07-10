@@ -1,10 +1,10 @@
 import React from 'react';
-import './mode-selector.css';
+import './mode-selector-tile.css';
 import {Link} from "react-router-dom";
 
-export default function ModeSelectionTile(props) {
+export default function ModeSelectorTile(props) {
     return (
-        <Link to={props.link} className="modeSelectorTile text-center border border-dark rounded d-flex flex-column">
+        <Link to={props.link} className="modeSelectorTile text-center border border-dark rounded d-inline-flex flex-column">
             <div>
                 <img src={props.img} alt=""/>
             </div>
