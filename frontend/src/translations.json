@@ -2,7 +2,14 @@
   "pl": {
     "create-character": "Stwórz postać",
     "use-existing-character": "Wykorzystaj istniejącą postać",
-    "navigation.home": "Start"
+    "navigation.home": "Start",
+    "player": "Gracz",
+    "name": "Imię",
+    "game-master": "Mistrz Gry",
+    "campaign": "Kampania",
+    "campaign-year": "Rok kampanii",
+    "character": "Bohater",
+    "race": "Rasa"
   },
   "en": {
     "create-character": "Create a character",

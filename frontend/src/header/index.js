@@ -8,7 +8,7 @@ export default (props) => {
         <div className="row header">
             <div className="col-3">
                 <Link to="/">
-                    <FormattedMessage id="navigation.home" default="Home"/>
+                    <FormattedMessage id="navigation.home" defaultMessage="Home"/>
                 </Link>
             </div>
             <div className="col-9 text-right">

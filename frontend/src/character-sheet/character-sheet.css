@@ -1,0 +1,22 @@
+#wfrp-logo-container img {
+    width: 100%;
+}
+
+.character-sheet table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.character-sheet table thead tr {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.character-sheet table thead tr th {
+    text-align: center;
+}
+
+.character-sheet table thead tr th, .character-sheet table tbody tr td {
+    border: 1px solid black;
+}

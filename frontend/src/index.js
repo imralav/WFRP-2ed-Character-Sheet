@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './index.css';
 
 import ModeSelector from './mode-selector';
-import CreateCharacter from './create-character';
+import CharacterSheet from './character-sheet';
 import OpenCharacter from './open-character';
 import Header from './header';
 
@@ -38,7 +38,7 @@ class MainContainer extends Component {
                     <div className="container-fluid">
                         <Header changeLocale={locale => this.changeLocale(locale)}/>
                         <Route exact path='/' component={ModeSelector}/>
-                        <Route path='/character/create' component={CreateCharacter}/>
+                        <Route path='/character/create' component={CharacterSheet}/>
                         <Route path='/character/open' component={OpenCharacter}/>
                     </div>
                 </Fragment>
