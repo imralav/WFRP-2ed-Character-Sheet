@@ -14,18 +14,38 @@ export default (props) => {
             <tbody>
             <tr>
                 <td>
-                    <FormattedMessage id="name" defaultMessage="Name"/>:
+                    <div>
+                        <label className>
+                            <FormattedMessage id="name" defaultMessage="Name"/>:
+                        </label>
+                        <input type="text"/>
+                    </div>
                 </td>
-                <td>
-                    <FormattedMessage id="game-master" defaultMessage="Game Master"/>:
+                <td className="w-40p">
+                    <div>
+                        <label>
+                            <FormattedMessage id="game-master" defaultMessage="Game Master"/>:
+                        </label>
+                        <input type="text"/>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <FormattedMessage id="campaign" defaultMessage="Campaign"/>:
+                    <div>
+                        <label>
+                            <FormattedMessage id="campaign" defaultMessage="Campaign"/>:
+                        </label>
+                        <input type="text"/>
+                    </div>
                 </td>
                 <td>
-                    <FormattedMessage id="campaign-year" defaultMessage="Campaign Year"/>:
+                    <div>
+                        <label>
+                            <FormattedMessage id="campaign-year" defaultMessage="Campaign Year"/>:
+                        </label>
+                        <input type="text"/>
+                    </div>
                 </td>
             </tr>
             </tbody>

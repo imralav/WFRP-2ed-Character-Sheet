@@ -1,8 +1,10 @@
 #wfrp-logo-container img {
     width: 100%;
+    min-width: 380px;
 }
 
 .character-sheet table {
+    min-width: 380px;
     width: 100%;
     border: 1px solid black;
     margin: 7px 0;
@@ -16,8 +18,32 @@
 
 .character-sheet table thead tr th {
     text-align: center;
+    font-size: 2.5vmax;
 }
 
 .character-sheet table thead tr th, .character-sheet table tbody tr td {
     border: 1px solid black;
+}
+
+.character-sheet table tbody tr td div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+}
+
+.character-sheet table tbody tr td div label {
+    flex-shrink: 0;
+    font-size: 1.75vmax;
+    margin: unset;
+}
+
+.character-sheet table tbody tr td input[type=text] {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 0 5px;
+    outline: none;
+    flex-grow: 2;
+    flex-shrink: 6;
+    font-size: 2vmax;
+    min-width: 0;
 }
