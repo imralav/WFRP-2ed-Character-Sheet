@@ -5,6 +5,7 @@
 .character-sheet table {
     width: 100%;
     border: 1px solid black;
+    margin: 7px 0;
 }
 
 .character-sheet table thead tr {

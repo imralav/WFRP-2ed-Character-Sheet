@@ -1,5 +1,19 @@
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+
+import Player from './player';
+import Character from './character';
+import ExperiencePoints from './experience-points';
+import PersonalDetails from './personal-details';
+import CharacterProfile from './character-profile';
+import CombatMovement from './combat-movement';
+import Weapons from './weapons';
+import Armour from './armour';
+import ArmourPoints from './armour-points';
+import Skills from './skills';
+import Talents from './talents';
+import Trappings from './trappings';
+import Money from './money';
+
 import './character-sheet.css';
 
 export default () => {
@@ -9,160 +23,43 @@ export default () => {
                 <img src="/wfrp-logo.png" alt="WFRP Logo"/>
             </div>
             <div className="col-12" id="player">
-                <table>
-                    <thead>
-                    <tr>
-                        <th colSpan="2">
-                            <FormattedMessage id="player" defaultMessage="Player"/>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="name" defaultMessage="Name"/>:
-                        </td>
-                        <td>
-                            <FormattedMessage id="game-master" defaultMessage="Game Master"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="campaign" defaultMessage="Campaign"/>:
-                        </td>
-                        <td>
-                            <FormattedMessage id="campaign-year" defaultMessage="Campaign Year"/>:
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <Player/>
             </div>
             <div className="col-12" id="character">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>
-                            <FormattedMessage id="character" defaultMessage="Character"/>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="name" defaultMessage="Name"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="race" defaultMessage="Race"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="current-career" defaultMessage="Current Career"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="previous-careers" defaultMessage="Previous Careers"/>:
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <Character/>
             </div>
             <div className="col-12" id="experience-points">
-                <table>
-                    <thead>
-                    <tr>
-                        <th colspan="2">
-                            <FormattedMessage id="experience-points" defaultMessage="Experience Points"/>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="current" defaultMessage="Current"/>:
-                        </td>
-                        <td>
-                            <FormattedMessage id="total" defaultMessage="Total"/>:
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <ExperiencePoints/>
             </div>
             <div className="col-12" id="personal-details">
-                <table>
-                    <thead>
-                    <tr>
-                        <th colSpan="2">
-                            <FormattedMessage id="personal-details" defaultMessage="Personal Details"/>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="age" defaultMessage="Age"/>:
-                        </td>
-                        <td>
-                            <FormattedMessage id="gender" defaultMessage="Gender"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="eye-color" defaultMessage="Eye Color"/>:
-                        </td>
-                        <td>
-                            <FormattedMessage id="weight" defaultMessage="Weight"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="hair-color" defaultMessage="Hair Color"/>:
-                        </td>
-                        <td>
-                            <FormattedMessage id="height" defaultMessage="Height"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <FormattedMessage id="star-sign" defaultMessage="Star Sign"/>:
-                        </td>
-                        <td>
-                            <FormattedMessage id="number-of-siblings" defaultMessage="Number of Siblings"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colSpan="2">
-                            <FormattedMessage id="birthplace" defaultMessage="Birthplace"/>:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colSpan="2">
-                            <FormattedMessage id="distinguishing-marks" defaultMessage="Distinguishing Marks"/>:
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <PersonalDetails/>
             </div>
             <div className="col-12" id="character-profile">
+                <CharacterProfile/>
             </div>
             <div className="col-12" id="combat-movement">
+                <CombatMovement/>
             </div>
             <div className="col-12" id="weapons">
+                <Weapons/>
             </div>
             <div className="col-12" id="armour">
+                <Armour/>
             </div>
             <div className="col-12" id="armour-points">
+                <ArmourPoints/>
             </div>
             <div className="col-12" id="skills">
+                <Skills/>
             </div>
             <div className="col-12" id="talents">
+                <Talents/>
             </div>
             <div className="col-12" id="trappings">
+                <Trappings/>
             </div>
             <div className="col-12" id="money">
+                <Money/>
             </div>
         </div>
     );
