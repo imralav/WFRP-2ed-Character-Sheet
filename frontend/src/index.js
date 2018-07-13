@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import pl from 'react-intl/locale-data/pl';
 import en from 'react-intl/locale-data/en';
 import {addLocaleData, IntlProvider} from 'react-intl';
-import messages from './translations.json';
+import TranslationsProvider from './translations/translations-provider';
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css';
@@ -23,7 +23,7 @@ class MainContainer extends Component {
         super(props);
         this.state = {
             locale: 'pl',
-            messages
+            messages: TranslationsProvider.get()
         }
     }
 
