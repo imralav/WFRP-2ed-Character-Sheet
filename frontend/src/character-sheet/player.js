@@ -2,6 +2,10 @@ import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
 export default (props) => {
+    const handleChange = event => {
+       const changeData = {name: event.target.name, value: event.target.value};
+       props.onChange(changeData);
+    };
     return (
         <table>
             <thead>
@@ -18,7 +22,7 @@ export default (props) => {
                         <label className>
                             <FormattedMessage id="name" defaultMessage="Name"/>:
                         </label>
-                        <input type="text"/>
+                        <input type="text" value={props.data.name} name="name" onChange={event => handleChange(event)}/>
                     </div>
                 </td>
                 <td className="w-40p">
@@ -26,7 +30,7 @@ export default (props) => {
                         <label>
                             <FormattedMessage id="game-master" defaultMessage="Game Master"/>:
                         </label>
-                        <input type="text"/>
+                        <input type="text" value={props.data.gameMaster} name="gameMaster" onChange={event => handleChange(event)}/>
                     </div>
                 </td>
             </tr>
@@ -36,7 +40,7 @@ export default (props) => {
                         <label>
                             <FormattedMessage id="campaign" defaultMessage="Campaign"/>:
                         </label>
-                        <input type="text"/>
+                        <input type="text" value={props.data.campaign} name="campaign" onChange={event => handleChange(event)}/>
                     </div>
                 </td>
                 <td>
@@ -44,7 +48,7 @@ export default (props) => {
                         <label>
                             <FormattedMessage id="campaign-year" defaultMessage="Campaign Year"/>:
                         </label>
-                        <input type="text"/>
+                        <input type="text" value={props.data.campaignYear} name="campaignYear" onChange={event => handleChange(event)}/>
                     </div>
                 </td>
             </tr>
