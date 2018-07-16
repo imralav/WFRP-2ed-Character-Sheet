@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
 
-import Player from './player';
-import Character from './character';
-import ExperiencePoints from './experience-points';
-import PersonalDetails from './personal-details';
-import CharacterProfile from './character-profile';
-import CombatMovement from './combat-movement';
-import Weapons from './weapons';
-import Armour from './armour';
-import ArmourPoints from './armour-points';
-import Skills from './skills';
-import Talents from './talents';
-import Trappings from './trappings';
-import Money from './money';
+import Player from './Player';
+import Character from './Character';
+import ExperiencePoints from './ExperiencePoints';
+import PersonalDetails from './PersonalDetails';
+import CharacterProfile from './CharacterProfile';
+import CombatMovement from './CombatMovement';
+import Weapons from './Weapons';
+import Armour from './Armour';
+import ArmourPoints from './ArmourPoints';
+import Skills from './Skills';
+import Talents from './Talents';
+import Trappings from './Trappings';
+import Money from './Money';
 
 import Clipboard from '../utils/clipboard';
 import ObjectPaths from '../utils/object-paths';
