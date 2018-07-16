@@ -24,21 +24,18 @@ import wfrpLogo from './wfrp-logo.png';
 export default class CharacterSheet extends Component {
     constructor(props) {
         super(props);
+        const emptyCharacterData = {
+            player: {}
+        };
         this.state = {
-            characterData: {
-                player: {
-                    name: "Tom",
-                    gameMaster: "Filip",
-                    campaign: "W ostępach Drakwaldu",
-                    campaignYear: "2018"
-                }
-            }
+            characterData: props.characterData || emptyCharacterData
         };
     }
 
     copyCharacterJsonToClipboard() {
         const characterDataJson = JSON.stringify(this.state.characterData);
-        Clipboard.copyTextToClipboard(characterDataJson);
+        let encodedCharacterData = btoa(characterDataJson);
+        Clipboard.copyTextToClipboard(encodedCharacterData);
     };
 
     handleInputChange(changeData, objectPath) {
@@ -52,7 +49,7 @@ export default class CharacterSheet extends Component {
         return (
             <div className="row character-sheet">
                 <div className="col-12" id="character-json">
-                    <button className="btn btn-dark btn-sm" onClick={() => this.copyCharacterJsonToClipboard()}>
+                    <button className="btn btn-dark btn-sm content-font-size" onClick={() => this.copyCharacterJsonToClipboard()}>
                         <FormattedMessage id="copy-character-data-to-clipboard" defaultMessage="Copy character data to clipboard for later use"/>
                     </button>
                 </div>

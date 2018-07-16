@@ -38,8 +38,8 @@ class MainContainer extends Component {
                     <div className="container-fluid">
                         <Header changeLocale={locale => this.changeLocale(locale)}/>
                         <Route exact path='/' component={ModeSelector}/>
-                        <Route path='/character/create' component={CharacterSheet}/>
-                        <Route path='/character/open' component={OpenCharacter}/>
+                        <Route exact path='/character' component={CharacterSheet}/>
+                        <Route exact path='/character/open' component={OpenCharacter}/>
                     </div>
                 </Fragment>
             </IntlProvider>
