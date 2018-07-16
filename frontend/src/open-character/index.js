@@ -11,16 +11,16 @@ export default class OpenCharacter extends Component {
         this.state = {};
     }
 
-    handleCharacterDataChange(event) {
+    handleCharacterDataChange = (event) => {
         this.setState({...this.state, unparsedCharacterData: event.target.value});
-    }
+    };
 
-    loadCharacterData() {
+    loadCharacterData = () => {
         //TODO: add validation
         let decodedCharacterData = atob(this.state.unparsedCharacterData);
         let characterData = JSON.parse(decodedCharacterData);
         this.setState({...this.state, characterData});
-    }
+    };
 
     render() {
         if(this.state.characterData) {
@@ -33,8 +33,8 @@ export default class OpenCharacter extends Component {
                     <div className="row">
                         <div className="col-12 offset-sm-2 col-sm-8">
                             <label className="label-font-size"><FormattedMessage id="paste-character-data" defaultMessage="Paste character data below"/></label>
-                            <textarea id="character-data-input" className="content-font-size" onChange={event => this.handleCharacterDataChange(event)}/>
-                            <button className="btn btn-dark btn-sm content-font-size" onClick={() => this.loadCharacterData()}>
+                            <textarea id="character-data-input" className="content-font-size" onChange={this.handleCharacterDataChange}/>
+                            <button className="btn btn-dark btn-sm content-font-size" onClick={this.loadCharacterData}>
                                 <FormattedMessage id="open-pasted-character" defaultMessage="Open pasted character"/>
                             </button>
                         </div>
