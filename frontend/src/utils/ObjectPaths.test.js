@@ -1,4 +1,4 @@
-import ObjectPaths from './object-paths';
+import ObjectPaths from './ObjectPaths';
 
 describe('ObjectPaths', () => {
     describe('setOnPath', () => {

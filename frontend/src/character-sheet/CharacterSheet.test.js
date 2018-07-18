@@ -1,13 +1,8 @@
 import React from 'react';
 import CharacterSheet from '../character-sheet';
 import Player from './Player';
-import Clipboard from '../utils/clipboard';
-import renderer from 'react-test-renderer';
-
-import en from 'react-intl/locale-data/en';
-import {addLocaleData, IntlProvider} from 'react-intl';
-
-addLocaleData(en);
+import Clipboard from '../utils/Clipboard';
+import TestUtils from '../utils/TestUtils';
 
 describe('CharacterSheet', () => {
     let component;
@@ -29,11 +24,7 @@ describe('CharacterSheet', () => {
                 clipboard = {
                     copyTextToClipboard: jest.fn()
                 };
-                component = renderer.create(
-                    <IntlProvider locale="en" messages={{}}>
-                        <CharacterSheet/>
-                    </IntlProvider>
-                );
+                component = TestUtils.createComponentWithDefaultIntl(<CharacterSheet/>);
                 componentRoot = component.root;
                 tree = component.toJSON();
             });
@@ -57,10 +48,8 @@ describe('CharacterSheet', () => {
                 clipboard = {
                     copyTextToClipboard: jest.fn()
                 };
-                component = renderer.create(
-                    <IntlProvider locale="en" messages={{}}>
-                        <CharacterSheet characterData={characterData} clipboard={clipboard}/>
-                    </IntlProvider>
+                component = TestUtils.createComponentWithDefaultIntl(
+                    <CharacterSheet characterData={characterData} clipboard={clipboard}/>
                 );
                 componentRoot = component.root;
                 tree = component.toJSON();

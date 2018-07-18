@@ -1,4 +1,4 @@
-import TranslationsProvider from './translations-provider';
+import TranslationsProvider from './TranslationsProvider';
 
 describe('get', () => {
     let translations;

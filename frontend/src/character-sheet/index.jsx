@@ -15,8 +15,8 @@ import Talents from './Talents';
 import Trappings from './Trappings';
 import Money from './Money';
 
-import Clipboard from '../utils/clipboard';
-import ObjectPaths from '../utils/object-paths';
+import Clipboard from '../utils/Clipboard';
+import ObjectPaths from '../utils/ObjectPaths';
 
 import './character-sheet.css';
 import wfrpLogo from './wfrp-logo.png';

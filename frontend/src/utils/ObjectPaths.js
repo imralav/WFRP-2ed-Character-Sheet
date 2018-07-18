@@ -1,4 +1,4 @@
-import Utils from './utils';
+import Utils from './Utils';
 
 export default class ObjectPaths {
     static setOnPath(object, path, value) {

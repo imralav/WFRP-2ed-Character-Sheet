@@ -1,10 +1,6 @@
 import React from 'react';
 import Player from './Player';
-import renderer from 'react-test-renderer';
-
-import en from 'react-intl/locale-data/en';
-import {addLocaleData, IntlProvider} from 'react-intl';
-addLocaleData(en);
+import TestUtils from '../utils/TestUtils';
 
 describe('Player', () => {
     let component;
@@ -20,10 +16,8 @@ describe('Player', () => {
             campaignYear: 'someCampaignYear'
         };
         onChangeFunction = jest.fn();
-        component = renderer.create(
-            <IntlProvider locale="en" messages={{}}>
-                <Player data={characterData} onChange={changeData => onChangeFunction(changeData)}/>
-            </IntlProvider>
+        component = TestUtils.createComponentWithDefaultIntl(
+            <Player data={characterData} onChange={changeData => onChangeFunction(changeData)}/>
         );
         componentRoot = component.root;
         tree = component.toJSON();

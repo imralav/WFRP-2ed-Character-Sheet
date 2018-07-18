@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import pl from 'react-intl/locale-data/pl';
 import en from 'react-intl/locale-data/en';
 import {addLocaleData, IntlProvider} from 'react-intl';
-import TranslationsProvider from './translations/translations-provider';
+import TranslationsProvider from './translations/TranslationsProvider';
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css';
