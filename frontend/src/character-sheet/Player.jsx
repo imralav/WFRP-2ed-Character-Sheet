@@ -1,7 +1,7 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
-export default (props) => {
+export default function Player(props) {
     const handleChange = event => {
        const changeData = {name: event.target.name, value: event.target.value};
        props.onChange(changeData);
@@ -19,7 +19,7 @@ export default (props) => {
             <tr>
                 <td>
                     <div>
-                        <label className>
+                        <label>
                             <FormattedMessage id="name" defaultMessage="Name"/>:
                         </label>
                         <input type="text" value={props.data.name} name="name" onChange={event => handleChange(event)}/>

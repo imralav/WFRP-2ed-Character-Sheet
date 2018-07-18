@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player should match previous snapshot 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        colSpan="2"
+      >
+        <span>
+          Player
+        </span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div>
+          <label>
+            <span>
+              Name
+            </span>
+            :
+          </label>
+          <input
+            name="name"
+            onChange={[Function]}
+            type="text"
+            value="someName"
+          />
+        </div>
+      </td>
+      <td
+        className="w-40p"
+      >
+        <div>
+          <label>
+            <span>
+              Game Master
+            </span>
+            :
+          </label>
+          <input
+            name="gameMaster"
+            onChange={[Function]}
+            type="text"
+            value="someGameMaster"
+          />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <label>
+            <span>
+              Campaign
+            </span>
+            :
+          </label>
+          <input
+            name="campaign"
+            onChange={[Function]}
+            type="text"
+            value="someCampaign"
+          />
+        </div>
+      </td>
+      <td>
+        <div>
+          <label>
+            <span>
+              Campaign Year
+            </span>
+            :
+          </label>
+          <input
+            name="campaignYear"
+            onChange={[Function]}
+            type="text"
+            value="someCampaignYear"
+          />
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
