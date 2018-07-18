@@ -30,12 +30,13 @@ export default class CharacterSheet extends Component {
         this.state = {
             characterData: props.characterData || emptyCharacterData
         };
+        this.clipboard = props.clipboard || Clipboard;
     }
 
     copyCharacterJsonToClipboard() {
         const characterDataJson = JSON.stringify(this.state.characterData);
         let encodedCharacterData = btoa(characterDataJson);
-        Clipboard.copyTextToClipboard(encodedCharacterData);
+        this.clipboard.copyTextToClipboard(encodedCharacterData);
     };
 
     handleInputChange(changeData, objectPath) {
