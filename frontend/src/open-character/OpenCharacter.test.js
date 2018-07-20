@@ -10,7 +10,7 @@ describe('OpenCharacter', () => {
     let componentRoot;
     let tree;
     beforeEach(() => {
-        component = TestUtils.createComponentWithDefaultIntlAndRouter(
+        component = TestUtils.createComponentWithDefaultIntl(
             <OpenCharacter/>
         );
         componentRoot = component.root;
@@ -39,7 +39,7 @@ describe('OpenCharacter', () => {
                 expect(componentRoot.findByType(OpenCharacter).instance.state.characterData).toEqual(CHARACTER_DATA);
             });
             it('should match snapshot', () => {
-                expect(tree).toMatchSnapshot();
+                expect(component.toJSON()).toMatchSnapshot();
             });
         });
     });

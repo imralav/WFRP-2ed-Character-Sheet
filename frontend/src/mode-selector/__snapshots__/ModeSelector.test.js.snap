@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModeSelector should match previous snapshot 1`] = `
+Array [
+  <div
+    className="row"
+>
+    <div
+        className="col-12 col-sm col-md-5"
+    >
+        <a
+            className="modeSelectorTile text-center border border-dark rounded d-inline-flex flex-column"
+            href="/character"
+            onClick={[Function]}
+        >
+            <div>
+                <img
+                    alt=""
+                    src="create-character.png"
+                />
+            </div>
+            <div>
+                <span>
+                    <span>
+                        Create character
+                    </span>
+                </span>
+            </div>
+        </a>
+    </div>
+    <div
+        className="col-12 col-sm offset-md-2 col-md-5 text-right"
+    >
+        <a
+            className="modeSelectorTile text-center border border-dark rounded d-inline-flex flex-column"
+            href="/character/open"
+            onClick={[Function]}
+        >
+            <div>
+                <img
+                    alt=""
+                    src="edit-character.png"
+                />
+            </div>
+            <div>
+                <span>
+                    <span>
+                        Use existing character
+                    </span>
+                </span>
+            </div>
+        </a>
+    </div>
+</div>,
+  ";",
+]
+`;

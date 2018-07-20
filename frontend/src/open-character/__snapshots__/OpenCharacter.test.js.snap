@@ -1,73 +1,527 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`OpenCharacter character data change character data load should match snapshot 1`] = `
-Array [
-  <div>
-    <div
-        className="row"
+<div
+  className="row character-sheet"
+>
+  <div
+    className="col-12"
+    id="character-json"
+  >
+    <button
+      className="btn btn-dark btn-sm content-font-size"
+      onClick={[Function]}
     >
-        <div
-            className="col-12 offset-sm-2 col-sm-8"
-        >
-            <label
-                className="label-font-size"
-            >
+      <span>
+        Copy character data to clipboard for later use
+      </span>
+    </button>
+  </div>
+  <div
+    className="col-12"
+    id="wfrp-logo-container"
+  >
+    <img
+      alt="WFRP Logo"
+      src="wfrp-logo.png"
+    />
+  </div>
+  <div
+    className="col-12"
+    id="player"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th
+            colSpan="2"
+          >
+            <span>
+              Player
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div>
+              <label>
                 <span>
-                    Paste character data below
+                  Name
                 </span>
-            </label>
-            <textarea
-                className="content-font-size"
-                id="character-data-input"
+                :
+              </label>
+              <input
+                name="name"
                 onChange={[Function]}
-            />
-            <button
-                className="btn btn-dark btn-sm content-font-size"
-                onClick={[Function]}
-            >
+                type="text"
+                value="someName"
+              />
+            </div>
+          </td>
+          <td
+            className="w-40p"
+          >
+            <div>
+              <label>
                 <span>
-                    Open pasted character
+                  Game Master
                 </span>
-            </button>
-        </div>
-    </div>
-</div>,
-  ";",
-]
+                :
+              </label>
+              <input
+                name="gameMaster"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <label>
+                <span>
+                  Campaign
+                </span>
+                :
+              </label>
+              <input
+                name="campaign"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </td>
+          <td>
+            <div>
+              <label>
+                <span>
+                  Campaign Year
+                </span>
+                :
+              </label>
+              <input
+                name="campaignYear"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="character"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Character
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span>
+              Name
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Race
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Current Career
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Previous Careers
+            </span>
+            :
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="experience-points"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th
+            colSpan="2"
+          >
+            <span>
+              Experience Points
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span>
+              Current
+            </span>
+            :
+          </td>
+          <td>
+            <span>
+              Total
+            </span>
+            :
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="personal-details"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th
+            colSpan="2"
+          >
+            <span>
+              Personal Details
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span>
+              Age
+            </span>
+            :
+          </td>
+          <td>
+            <span>
+              Gender
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Eye Color
+            </span>
+            :
+          </td>
+          <td>
+            <span>
+              Weight
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Hair Color
+            </span>
+            :
+          </td>
+          <td>
+            <span>
+              Height
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Star Sign
+            </span>
+            :
+          </td>
+          <td>
+            <span>
+              Number of Siblings
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td
+            colSpan="2"
+          >
+            <span>
+              Birthplace
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td
+            colSpan="2"
+          >
+            <span>
+              Distinguishing Marks
+            </span>
+            :
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="character-profile"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Character Profile
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="combat-movement"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th
+            colSpan="3"
+          >
+            <span>
+              Combat Movement
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span>
+              Move/Disengage
+            </span>
+            :
+          </td>
+          <td>
+            <span>
+              Charge Attack
+            </span>
+            :
+          </td>
+          <td>
+            <span>
+              Run
+            </span>
+            :
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="weapons"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Weapons
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="armour"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Armour
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="armour-points"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Armour Points
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="skills"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Skills
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="talents"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Talents
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="trappings"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Trappings
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div
+    className="col-12"
+    id="money"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>
+              Money
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span>
+              Gold Crowns (gc)
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Silver Schillings (s)
+            </span>
+            :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Brass Pennies (p)
+            </span>
+            :
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 `;
 
 exports[`OpenCharacter should match previous snapshot 1`] = `
-Array [
-  <div>
+<div>
+  <div
+    className="row"
+  >
     <div
-        className="row"
+      className="col-12 offset-sm-2 col-sm-8"
     >
-        <div
-            className="col-12 offset-sm-2 col-sm-8"
-        >
-            <label
-                className="label-font-size"
-            >
-                <span>
-                    Paste character data below
-                </span>
-            </label>
-            <textarea
-                className="content-font-size"
-                id="character-data-input"
-                onChange={[Function]}
-            />
-            <button
-                className="btn btn-dark btn-sm content-font-size"
-                onClick={[Function]}
-            >
-                <span>
-                    Open pasted character
-                </span>
-            </button>
-        </div>
+      <label
+        className="label-font-size"
+      >
+        <span>
+          Paste character data below
+        </span>
+      </label>
+      <textarea
+        className="content-font-size"
+        id="character-data-input"
+        onChange={[Function]}
+      />
+      <button
+        className="btn btn-dark btn-sm content-font-size"
+        onClick={[Function]}
+      >
+        <span>
+          Open pasted character
+        </span>
+      </button>
     </div>
-</div>,
-  ";",
-]
+  </div>
+</div>
 `;
