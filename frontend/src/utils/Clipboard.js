@@ -25,8 +25,9 @@ export default class Clipboard {
         //TODO: find out why the code below does not work
         // navigator.clipboard.writeText(text).then(() => {
         //     console.log('Async: Copying to clipboard was successful!');
-        // }, err => {
-        //     console.error('Async: Could not copy text: ', err);
+        // }).catch(err => {
+        //     console.error('Async: Could not copy text: ', err, ' falling back');
+        //     Clipboard.fallbackCopyTextToClipboard(text);
         // });
     }
 }

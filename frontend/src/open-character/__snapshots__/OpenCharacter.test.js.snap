@@ -1,6 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OpenCharacter character data change character data load should match snapshot 1`] = `
+exports[`OpenCharacter corrupted character data change loadCharacterData on decoding errors should match snapshot 1`] = `
+<div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 offset-sm-2 col-sm-8"
+    >
+      <label
+        className="label-font-size"
+      >
+        <span>
+          Paste character data below
+        </span>
+      </label>
+      <div
+        className="text-danger"
+      >
+        <span>
+          Provided character data is incorrect. Make sure to paste the exact same text as was provided by the application.
+        </span>
+      </div>
+      <textarea
+        className="content-font-size"
+        id="character-data-input"
+        onChange={[Function]}
+        onFocus={[Function]}
+      />
+      <button
+        className="btn btn-dark btn-sm content-font-size"
+        onClick={[Function]}
+      >
+        <span>
+          Open pasted character
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OpenCharacter should match previous snapshot 1`] = `
+<div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 offset-sm-2 col-sm-8"
+    >
+      <label
+        className="label-font-size"
+      >
+        <span>
+          Paste character data below
+        </span>
+      </label>
+      
+      <textarea
+        className="content-font-size"
+        id="character-data-input"
+        onChange={[Function]}
+        onFocus={[Function]}
+      />
+      <button
+        className="btn btn-dark btn-sm content-font-size"
+        onClick={[Function]}
+      >
+        <span>
+          Open pasted character
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OpenCharacter uncorrupted character data change loadCharacterData on failed validation character data load should match snapshot 1`] = `
+<div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 offset-sm-2 col-sm-8"
+    >
+      <label
+        className="label-font-size"
+      >
+        <span>
+          Paste character data below
+        </span>
+      </label>
+      <div
+        className="text-danger"
+      >
+        <span>
+          Provided character data is incorrect. Make sure to paste the exact same text as was provided by the application.
+        </span>
+      </div>
+      <textarea
+        className="content-font-size"
+        id="character-data-input"
+        onChange={[Function]}
+        onFocus={[Function]}
+      />
+      <button
+        className="btn btn-dark btn-sm content-font-size"
+        onClick={[Function]}
+      >
+        <span>
+          Open pasted character
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OpenCharacter uncorrupted character data change loadCharacterData on passed validation character data load should match snapshot 1`] = `
 <div
   className="row character-sheet"
 >
@@ -489,39 +606,6 @@ exports[`OpenCharacter character data change character data load should match sn
         </tr>
       </tbody>
     </table>
-  </div>
-</div>
-`;
-
-exports[`OpenCharacter should match previous snapshot 1`] = `
-<div>
-  <div
-    className="row"
-  >
-    <div
-      className="col-12 offset-sm-2 col-sm-8"
-    >
-      <label
-        className="label-font-size"
-      >
-        <span>
-          Paste character data below
-        </span>
-      </label>
-      <textarea
-        className="content-font-size"
-        id="character-data-input"
-        onChange={[Function]}
-      />
-      <button
-        className="btn btn-dark btn-sm content-font-size"
-        onClick={[Function]}
-      >
-        <span>
-          Open pasted character
-        </span>
-      </button>
-    </div>
   </div>
 </div>
 `;
