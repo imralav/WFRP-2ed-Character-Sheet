@@ -8,7 +8,7 @@ body {
 }
 
 .header-font-size {
-    font-size: 2.5vmax;
+    font-size: 2vmax;
 }
 
 .label-font-size {
@@ -17,4 +17,61 @@ body {
 
 .content-font-size {
     font-size: 2vmax;
+}
+
+@media (min-width: 576px) {
+    .header-font-size {
+        font-size: 2vmax;
+    }
+
+    .label-font-size {
+        font-size: 1.75vmax;
+    }
+
+    .content-font-size {
+        font-size: 2vmax;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-font-size {
+        font-size: 1.75vmax;
+    }
+
+    .label-font-size {
+        font-size: 1.25vmax;
+    }
+
+    .content-font-size {
+        font-size: 1.5vmax;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-font-size {
+        font-size: 1.5vmax;
+    }
+
+    .label-font-size {
+        font-size: 1vmax;
+    }
+
+    .content-font-size {
+        font-size: 1.25vmax;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-font-size {
+        font-size: 1.25vmax;
+    }
+
+    .label-font-size {
+        font-size: 1vmax;
+    }
+
+    .content-font-size {
+        font-size: 1.25vmax;
+    }
+
 }

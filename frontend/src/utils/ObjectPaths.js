@@ -3,10 +3,10 @@ import Utils from './Utils';
 export default class ObjectPaths {
     static setOnPath(object, path, value) {
         if(Utils.isObjectEmpty(object)) {
-            throw 'Object cannot be empty';
+            throw new Error('Object cannot be empty');
         }
         if(Utils.isStringEmptyOrBlank(path)) {
-            throw 'Property path cannot be empty';
+            throw new Error('Property path cannot be empty');
         }
         const properties = path.split('.');
         let inspectedObject = object;

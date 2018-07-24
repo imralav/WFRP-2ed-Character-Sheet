@@ -37,7 +37,7 @@ describe('ObjectPaths', () => {
                 try {
                     ObjectPaths.setOnPath(object, 'some.path', 'someValue');
                 } catch (error) {
-                    expect(error).toEqual('Object cannot be empty');
+                    expect(error.message).toEqual('Object cannot be empty');
                 }
             });
         });
@@ -46,7 +46,7 @@ describe('ObjectPaths', () => {
                 try {
                     ObjectPaths.setOnPath(someCorrectObject, path, 'someValue');
                 } catch (error) {
-                    expect(error).toEqual('Property path cannot be empty');
+                    expect(error.message).toEqual('Property path cannot be empty');
                 }
             });
         });

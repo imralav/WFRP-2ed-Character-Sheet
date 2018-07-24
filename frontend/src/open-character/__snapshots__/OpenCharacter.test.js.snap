@@ -151,6 +151,7 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="2"
           >
             <span>
@@ -163,13 +164,16 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
         <tr>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Name
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="name"
                 onChange={[Function]}
                 type="text"
@@ -181,13 +185,16 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
             className="w-40p"
           >
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Game Master
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="gameMaster"
                 onChange={[Function]}
                 type="text"
@@ -199,13 +206,16 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
         <tr>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Campaign
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="campaign"
                 onChange={[Function]}
                 type="text"
@@ -215,13 +225,16 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
           </td>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Campaign Year
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="campaignYear"
                 onChange={[Function]}
                 type="text"

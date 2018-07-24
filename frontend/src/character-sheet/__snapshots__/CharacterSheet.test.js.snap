@@ -34,6 +34,7 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="2"
           >
             <span>
@@ -46,13 +47,16 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
         <tr>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Name
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="name"
                 onChange={[Function]}
                 type="text"
@@ -64,13 +68,16 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
             className="w-40p"
           >
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Game Master
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="gameMaster"
                 onChange={[Function]}
                 type="text"
@@ -82,13 +89,16 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
         <tr>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Campaign
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="campaign"
                 onChange={[Function]}
                 type="text"
@@ -98,13 +108,16 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
           </td>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Campaign Year
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="campaignYear"
                 onChange={[Function]}
                 type="text"
@@ -527,6 +540,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="2"
           >
             <span>
@@ -539,13 +553,16 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
         <tr>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Name
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="name"
                 onChange={[Function]}
                 type="text"
@@ -557,13 +574,16 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
             className="w-40p"
           >
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Game Master
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="gameMaster"
                 onChange={[Function]}
                 type="text"
@@ -575,13 +595,16 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
         <tr>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Campaign
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="campaign"
                 onChange={[Function]}
                 type="text"
@@ -591,13 +614,16 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
           </td>
           <td>
             <div>
-              <label>
+              <label
+                className="label-font-size"
+              >
                 <span>
                   Campaign Year
                 </span>
                 :
               </label>
               <input
+                className="content-font-size"
                 name="campaignYear"
                 onChange={[Function]}
                 type="text"
