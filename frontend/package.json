@@ -5,11 +5,14 @@
   "dependencies": {
     "bootstrap": "^4.1.1",
     "react": "^16.4.1",
+    "react-alert": "^4.0.4",
+    "react-alert-template-basic": "^1.0.0",
     "react-dom": "^16.4.1",
     "react-intl": "^2.4.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "react-test-renderer": "^16.4.1"
+    "react-test-renderer": "^16.4.1",
+    "react-transition-group": "^2.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,6 +27,10 @@
     "jest": "^23.4.0"
   },
   "jest": {
-    "collectCoverageFrom": ["src/**/*.js", "src/**/*.jsx", "!src/index.js"]
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "!src/index.js"
+    ]
   }
 }

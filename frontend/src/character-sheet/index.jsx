@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
+import { withAlert } from 'react-alert'
 
 import Player from './Player';
 import Character from './Character';
@@ -21,7 +22,7 @@ import ObjectPaths from '../utils/ObjectPaths';
 import './character-sheet.css';
 import wfrpLogo from './wfrp-logo.png';
 
-export default class CharacterSheet extends Component {
+class CharacterSheet extends Component {
     constructor(props) {
         super(props);
         const emptyCharacterData = {
@@ -37,6 +38,7 @@ export default class CharacterSheet extends Component {
         const characterDataJson = JSON.stringify(this.state.characterData);
         let encodedCharacterData = btoa(characterDataJson);
         this.clipboard.copyTextToClipboard(encodedCharacterData);
+        this.props.alert.show(<FormattedMessage id="character.data.copied" defaultMessage="Character data copied to clipboard"/>);
     };
 
     handleInputChange(changeData, objectPath) {
@@ -100,3 +102,5 @@ export default class CharacterSheet extends Component {
         );
     }
 }
+
+export default withAlert(CharacterSheet);
