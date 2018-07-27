@@ -1,19 +1,27 @@
 export default class CharacterLoadValidator {
     constructor() {
         this.validPropertyNames = {
-            player: ['name', 'gameMaster', 'campaign', 'campaignYear']
+            player: ['name', 'gameMaster', 'campaign', 'campaignYear'],
+            character: ['name', 'race', 'currentCareer', 'previousCareers']
         };
     }
     isValid(characterData) {
-        return !!characterData && this.areAvailableSectionsCorrect(characterData) && this.isSectionCorrect(characterData, 'player');
+        return !!characterData && this.hasCorrectSectionsPresent(characterData) && this.areSectionsCorrect(characterData);
     }
 
-    areAvailableSectionsCorrect(characterData) {
-        return !!characterData && characterData.hasOwnProperty('player') && Object.keys(characterData).length === 1;
+    hasCorrectSectionsPresent(characterData) {
+        return !!characterData &&
+            characterData.hasOwnProperty('player') &&
+            characterData.hasOwnProperty('character') &&
+            Object.keys(characterData).length === 2;
     }
 
-    isSectionCorrect(sectionData, sectionName) {
-        return !!sectionData[sectionName] && this.hasCorrectPropertiesForSection(sectionData[sectionName],sectionName);
+    areSectionsCorrect(characterData) {
+        return Object.keys(this.validPropertyNames).every(sectionName => this.isSectionCorrect(characterData, sectionName));
+    }
+
+    isSectionCorrect(characterData, sectionName) {
+        return !!characterData[sectionName] && this.hasCorrectPropertiesForSection(characterData[sectionName],sectionName);
     }
 
     hasCorrectPropertiesForSection(sectionData, sectionName) {

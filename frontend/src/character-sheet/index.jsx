@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
-import { withAlert } from 'react-alert'
+import {withAlert} from 'react-alert'
 
 import Player from './Player';
 import Character from './Character';
@@ -26,7 +26,8 @@ class CharacterSheet extends Component {
     constructor(props) {
         super(props);
         const emptyCharacterData = {
-            player: {}
+            player: {},
+            character: {}
         };
         this.state = {
             characterData: props.characterData || emptyCharacterData
@@ -38,7 +39,9 @@ class CharacterSheet extends Component {
         const characterDataJson = JSON.stringify(this.state.characterData);
         let encodedCharacterData = btoa(characterDataJson);
         this.clipboard.copyTextToClipboard(encodedCharacterData);
-        this.props.alert.show(<FormattedMessage id="character.data.copied" defaultMessage="Character data copied to clipboard"/>);
+        if (this.props.alert) {
+            this.props.alert.show(<FormattedMessage id="character.data.copied" defaultMessage="Character data copied to clipboard"/>)
+        }
     };
 
     handleInputChange(changeData, objectPath) {
@@ -63,7 +66,8 @@ class CharacterSheet extends Component {
                     <Player data={this.state.characterData.player} onChange={changeData => this.handleInputChange(changeData, 'characterData.player')}/>
                 </div>
                 <div className="col-12" id="character">
-                    <Character/>
+                    <Character data={this.state.characterData.character}
+                               onChange={changeData => this.handleInputChange(changeData, 'characterData.character')}/>
                 </div>
                 <div className="col-12" id="experience-points">
                     <ExperiencePoints/>

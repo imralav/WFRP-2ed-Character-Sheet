@@ -8,22 +8,40 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 addLocaleData(en);
 
-export default class TestUtils {
-    static createComponentWithDefaultIntl(component) {
-        return renderer.create(
-            <IntlProvider locale="en" messages={{}}>
-                {component}
-            </IntlProvider>
-        );
+class ComponentBuilder {
+    constructor(component) {
+        this.component = component;
     }
 
-    static createComponentWithDefaultIntlAndRouter(component) {
-        return TestUtils.createComponentWithDefaultIntl(
+    withIntl() {
+        this.component = (
+            <IntlProvider locale="en" messages={{}}>
+                <Fragment>
+                {this.component}
+                </Fragment>
+            </IntlProvider>
+        );
+        return this;
+    }
+
+    withRouter() {
+        this.component = (
             <Router>
                 <Fragment>
-                {component};
+                    {this.component}
                 </Fragment>
             </Router>
         );
+        return this;
+    }
+
+    build() {
+        return renderer.create(this.component);
+    }
+}
+
+export default class TestUtils {
+    static buildComponent(component) {
+        return new ComponentBuilder(component);
     }
 }

@@ -1,24 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NodeSelectionTile should match previous snapshot 1`] = `
-Array [
-  <a
-    className="modeSelectorTile text-center border border-dark rounded d-inline-flex flex-column"
-    href="/characterSheet"
-    onClick={[Function]}
+<a
+  className="modeSelectorTile text-center border border-dark rounded d-inline-flex flex-column"
+  href="/characterSheet"
+  onClick={[Function]}
 >
-    <div>
-        <img
-            alt=""
-            src="create-character.png"
-        />
-    </div>
-    <div>
-        <span>
-            someText
-        </span>
-    </div>
-</a>,
-  ";",
-]
+  <div>
+    <img
+      alt=""
+      src="create-character.png"
+    />
+  </div>
+  <div>
+    <span>
+      someText
+    </span>
+  </div>
+</a>
 `;

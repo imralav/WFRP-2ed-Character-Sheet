@@ -136,7 +136,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     <table>
       <thead>
         <tr>
-          <th>
+          <th
+            className="header-font-size"
+          >
             <span>
               Character
             </span>
@@ -146,34 +148,86 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
       <tbody>
         <tr>
           <td>
-            <span>
-              Name
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Name
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="name"
+                onChange={[Function]}
+                type="text"
+                value="characterName"
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Race
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Race
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="race"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Current Career
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Current Career
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="currentCareer"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Previous Careers
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Previous Careers
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="previousCareers"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
       </tbody>
@@ -642,7 +696,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     <table>
       <thead>
         <tr>
-          <th>
+          <th
+            className="header-font-size"
+          >
             <span>
               Character
             </span>
@@ -652,34 +708,86 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
       <tbody>
         <tr>
           <td>
-            <span>
-              Name
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Name
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="name"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Race
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Race
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="race"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Current Career
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Current Career
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="currentCareer"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Previous Careers
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Previous Careers
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="previousCareers"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
       </tbody>

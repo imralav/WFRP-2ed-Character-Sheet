@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import {Route} from 'react-router-dom';
 
 import OpenCharacter from './open-character';
@@ -45,14 +45,12 @@ export default class MainContainer extends Component {
         return (
             <IntlProvider locale={this.state.locale} messages={this.state.messages[this.state.locale]}>
                 <AlertProvider template={BasicAlertTemplate} {...alertOptions}>
-                    <Fragment>
-                        <div className="container-fluid">
-                            <Header changeLocale={locale => this.changeLocale(locale)}/>
-                            <Route exact path='/' component={ModeSelector}/>
-                            <Route exact path='/character' component={CharacterSheet}/>
-                            <Route exact path='/character/open' component={OpenCharacter}/>
-                        </div>
-                    </Fragment>
+                    <div className="container-fluid">
+                        <Header changeLocale={locale => this.changeLocale(locale)}/>
+                        <Route exact path='/' component={ModeSelector}/>
+                        <Route exact path='/character' component={CharacterSheet}/>
+                        <Route exact path='/character/open' component={OpenCharacter}/>
+                    </div>
                 </AlertProvider>
             </IntlProvider>
         );

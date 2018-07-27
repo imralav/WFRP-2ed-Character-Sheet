@@ -12,9 +12,9 @@ describe('NodeSelectionTile', () => {
     let changeLocaleFunction;
     beforeEach(() => {
         changeLocaleFunction = jest.fn();
-        component = TestUtils.createComponentWithDefaultIntlAndRouter(
+        component = TestUtils.buildComponent(
             <NodeSelectionTile img={CreateCharacterImg} link={SOME_LINK} text={SOME_TEXT}/>
-        );
+        ).withIntl().withRouter().build();
         componentRoot = component.root;
         tree = component.toJSON();
     });

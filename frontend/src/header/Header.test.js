@@ -9,9 +9,9 @@ describe('Header', () => {
     let changeLocaleFunction;
     beforeEach(() => {
         changeLocaleFunction = jest.fn();
-        component = TestUtils.createComponentWithDefaultIntlAndRouter(
+        component = TestUtils.buildComponent(
             <Header changeLocale={locale => changeLocaleFunction(locale)}/>
-        );
+        ).withIntl().withRouter().build();
         componentRoot = component.root;
         tree = component.toJSON();
     });

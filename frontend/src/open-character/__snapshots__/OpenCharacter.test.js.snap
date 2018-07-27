@@ -177,7 +177,7 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
                 name="name"
                 onChange={[Function]}
                 type="text"
-                value="someName"
+                value="playerName"
               />
             </div>
           </td>
@@ -253,7 +253,9 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
     <table>
       <thead>
         <tr>
-          <th>
+          <th
+            className="header-font-size"
+          >
             <span>
               Character
             </span>
@@ -263,34 +265,86 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
       <tbody>
         <tr>
           <td>
-            <span>
-              Name
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Name
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="name"
+                onChange={[Function]}
+                type="text"
+                value="characterName"
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Race
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Race
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="race"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Current Career
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Current Career
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="currentCareer"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Previous Careers
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Previous Careers
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="previousCareers"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </td>
         </tr>
       </tbody>

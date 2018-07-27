@@ -28,7 +28,10 @@ describe('CharacterLoadValidator', () => {
             });
         });
         describe('for correct character data', () => {
-            const correctCharacterData = {player: {name: undefined, gameMaster: undefined, campaign: undefined, campaignYear: undefined}};
+            const correctCharacterData = {
+                player: {name: undefined, gameMaster: undefined, campaign: undefined, campaignYear: undefined},
+                character: {name: undefined, race: undefined, currentCareer: undefined, previousCareers: undefined}
+            };
             it('should return true', () => {
                 expect(validator.isValid(correctCharacterData)).toEqual(true);
             });

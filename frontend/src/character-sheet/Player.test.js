@@ -16,9 +16,9 @@ describe('Player', () => {
             campaignYear: 'someCampaignYear'
         };
         onChangeFunction = jest.fn();
-        component = TestUtils.createComponentWithDefaultIntl(
+        component = TestUtils.buildComponent(
             <Player data={characterData} onChange={changeData => onChangeFunction(changeData)}/>
-        );
+        ).withIntl().build();
         componentRoot = component.root;
         tree = component.toJSON();
     });

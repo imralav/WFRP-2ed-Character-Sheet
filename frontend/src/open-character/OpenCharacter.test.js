@@ -3,7 +3,7 @@ import OpenCharacter from '../open-character';
 import TestUtils from '../utils/TestUtils';
 
 describe('OpenCharacter', () => {
-    const CHARACTER_DATA = {player: {name: 'someName'}};
+    const CHARACTER_DATA = {player: {name: 'playerName'}, character: {name: 'characterName'}};
     const CHARACTER_DATA_JSON = JSON.stringify(CHARACTER_DATA);
     const ENCODED_CHARACTER_DATA = btoa(CHARACTER_DATA_JSON);
     const CORRUPTED_CHARACTER_DATA = 'someCorruptedData';
@@ -12,9 +12,9 @@ describe('OpenCharacter', () => {
     let componentRoot;
     let tree;
     beforeEach(() => {
-        component = TestUtils.createComponentWithDefaultIntl(
+        component = TestUtils.buildComponent(
             <OpenCharacter characterLoadValidator={characterLoadValidator}/>
-        );
+        ).withIntl().build();
         componentRoot = component.root;
         tree = component.toJSON();
     });

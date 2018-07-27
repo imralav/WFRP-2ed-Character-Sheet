@@ -7,9 +7,9 @@ describe('ModeSelector', () => {
     let componentRoot;
     let tree;
     beforeEach(() => {
-        component = TestUtils.createComponentWithDefaultIntlAndRouter(
+        component = TestUtils.buildComponent(
             <ModeSelector/>
-        );
+        ).withIntl().withRouter().build();
         componentRoot = component.root;
         tree = component.toJSON();
     });

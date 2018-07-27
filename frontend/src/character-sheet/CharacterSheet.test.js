@@ -15,16 +15,19 @@ describe('CharacterSheet', () => {
             beforeEach(() => {
                 characterData = {
                     player: {
-                        name: 'someName',
+                        name: 'playerName',
                         gameMaster: 'someGameMaster',
                         campaign: 'someCampaign',
                         campaignYear: 'someCampaignYear'
+                    },
+                    character: {
+                        name: 'characterName'
                     }
                 };
                 clipboard = {
                     copyTextToClipboard: jest.fn()
                 };
-                component = TestUtils.createComponentWithDefaultIntl(<CharacterSheet/>);
+                component = TestUtils.buildComponent(<CharacterSheet/>).withIntl().build();
                 componentRoot = component.root;
                 tree = component.toJSON();
             });
@@ -32,25 +35,34 @@ describe('CharacterSheet', () => {
                 expect(tree).toMatchSnapshot();
             });
             it('should have correct clipboard set', () => {
-                expect(componentRoot.findByType(CharacterSheet).instance.clipboard).toBe(Clipboard);
+                let characterSheet = componentRoot.findByType(CharacterSheet);
+                expect(characterSheet.children[0].instance.clipboard).toBe(Clipboard);
             });
         });
         describe('with character data and clipboard', () => {
+            let alertMock;
             beforeEach(() => {
+                alertMock = {
+                    show: jest.fn()
+                };
                 characterData = {
                     player: {
                         name: 'someName',
                         gameMaster: 'someGameMaster',
                         campaign: 'someCampaign',
                         campaignYear: 'someCampaignYear'
+                    },
+                    character: {
+                        name: 'characterName'
                     }
+                };
+                alertMock = {
+                    show: jest.fn()
                 };
                 clipboard = {
                     copyTextToClipboard: jest.fn()
                 };
-                component = TestUtils.createComponentWithDefaultIntl(
-                    <CharacterSheet characterData={characterData} clipboard={clipboard}/>
-                );
+                component = TestUtils.buildComponent(<CharacterSheet characterData={characterData} clipboard={clipboard} alert={alertMock}/>).withIntl().build();
                 componentRoot = component.root;
                 tree = component.toJSON();
             });
@@ -75,7 +87,8 @@ describe('CharacterSheet', () => {
                     player.props.onChange(changeData);
                 });
                 it('should change state', () => {
-                    expect(componentRoot.findByType(CharacterSheet).instance.state.characterData.player.name).toEqual(changeData.value);
+                    let characterSheet = componentRoot.findByType(CharacterSheet);
+                    expect(characterSheet.children[0].instance.state.characterData.player.name).toEqual(changeData.value);
                 });
             });
         });
