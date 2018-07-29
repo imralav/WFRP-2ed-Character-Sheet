@@ -35,7 +35,7 @@
     margin: unset;
 }
 
-.character-sheet table tbody tr td input[type=text] {
+.character-sheet table tbody tr td input[type=text], .character-sheet table tbody tr td input[type=number] {
     border: none;
     border-bottom: 1px solid gray;
     margin: 0 5px;

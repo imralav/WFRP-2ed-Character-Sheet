@@ -241,6 +241,7 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="2"
           >
             <span>
@@ -252,16 +253,42 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
       <tbody>
         <tr>
           <td>
-            <span>
-              Current
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Current
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="current"
+                onChange={[Function]}
+                type="number"
+                value={50}
+              />
+            </div>
           </td>
           <td>
-            <span>
-              Total
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Total
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="total"
+                onChange={[Function]}
+                type="number"
+                value={150}
+              />
+            </div>
           </td>
         </tr>
       </tbody>
@@ -801,6 +828,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="2"
           >
             <span>
@@ -812,16 +840,42 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
       <tbody>
         <tr>
           <td>
-            <span>
-              Current
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Current
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="current"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
           <td>
-            <span>
-              Total
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Total
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="total"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
         </tr>
       </tbody>

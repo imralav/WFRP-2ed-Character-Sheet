@@ -27,7 +27,8 @@ class CharacterSheet extends Component {
         super(props);
         const emptyCharacterData = {
             player: {},
-            character: {}
+            character: {},
+            experiencePoints: {current: 0, total: 0}
         };
         this.state = {
             characterData: props.characterData || emptyCharacterData
@@ -70,7 +71,8 @@ class CharacterSheet extends Component {
                                onChange={changeData => this.handleInputChange(changeData, 'characterData.character')}/>
                 </div>
                 <div className="col-12" id="experience-points">
-                    <ExperiencePoints/>
+                    <ExperiencePoints data={this.state.characterData.experiencePoints}
+                                      onChange={changeData => this.handleInputChange(changeData, 'characterData.experiencePoints')}/>
                 </div>
                 <div className="col-12" id="personal-details">
                     <PersonalDetails/>

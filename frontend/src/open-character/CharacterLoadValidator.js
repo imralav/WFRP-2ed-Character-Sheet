@@ -2,7 +2,8 @@ export default class CharacterLoadValidator {
     constructor() {
         this.validPropertyNames = {
             player: ['name', 'gameMaster', 'campaign', 'campaignYear'],
-            character: ['name', 'race', 'currentCareer', 'previousCareers']
+            character: ['name', 'race', 'currentCareer', 'previousCareers'],
+            experiencePoints: ['current', 'total']
         };
     }
     isValid(characterData) {
@@ -13,7 +14,8 @@ export default class CharacterLoadValidator {
         return !!characterData &&
             characterData.hasOwnProperty('player') &&
             characterData.hasOwnProperty('character') &&
-            Object.keys(characterData).length === 2;
+            characterData.hasOwnProperty('experiencePoints') &&
+            Object.keys(characterData).length === 3;
     }
 
     areSectionsCorrect(characterData) {

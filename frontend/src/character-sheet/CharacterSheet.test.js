@@ -54,6 +54,10 @@ describe('CharacterSheet', () => {
                     },
                     character: {
                         name: 'characterName'
+                    },
+                    experiencePoints: {
+                        current: 50,
+                        total: 150
                     }
                 };
                 alertMock = {

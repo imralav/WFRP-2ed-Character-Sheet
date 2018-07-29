@@ -358,6 +358,7 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="2"
           >
             <span>
@@ -369,16 +370,42 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
       <tbody>
         <tr>
           <td>
-            <span>
-              Current
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Current
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="current"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
           <td>
-            <span>
-              Total
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Total
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="total"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
         </tr>
       </tbody>
