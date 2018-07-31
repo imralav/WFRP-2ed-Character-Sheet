@@ -79,7 +79,8 @@ class CharacterSheet extends Component {
                     <CharacterProfile/>
                 </div>
                 <div className="col-12" id="combat-movement">
-                    <CombatMovement/>
+                    <CombatMovement data={this.state.characterData.combatMovement}
+                                    onChange={changeData => this.handleInputChange(changeData, 'characterData.combatMovement')}/>
                 </div>
                 <div className="col-12" id="weapons">
                     <Weapons/>

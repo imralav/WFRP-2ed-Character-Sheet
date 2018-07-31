@@ -662,6 +662,7 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="3"
           >
             <span>
@@ -672,23 +673,68 @@ exports[`OpenCharacter uncorrupted character data change loadCharacterData on pa
       </thead>
       <tbody>
         <tr>
-          <td>
-            <span>
-              Move/Disengage
-            </span>
-            :
+          <td
+            className="w-33p"
+          >
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Move/Disengage
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="moveDisengage"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
-          <td>
-            <span>
-              Charge Attack
-            </span>
-            :
+          <td
+            className="w-33p"
+          >
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Charge Attack
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="chargeAttack"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
-          <td>
-            <span>
-              Run
-            </span>
-            :
+          <td
+            className="w-33p"
+          >
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Run
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="run"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
         </tr>
       </tbody>

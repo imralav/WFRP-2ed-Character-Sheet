@@ -28,6 +28,11 @@ export default class CharacterData {
                 numberOfSiblings: 0,
                 birthplace: '',
                 distinguishingMarks: ''
+            },
+            combatMovement: {
+                moveDisengage: 0,
+                chargeAttack: 0,
+                run: 0
             }
         });
     }

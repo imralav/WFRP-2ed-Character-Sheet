@@ -7,6 +7,10 @@ body {
     width: 40%;
 }
 
+.w-33p {
+    width: 33.3%;
+}
+
 .header-font-size {
     font-size: 2vmax;
 }
