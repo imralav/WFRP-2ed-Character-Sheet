@@ -16,6 +16,8 @@ import Talents from './Talents';
 import Trappings from './Trappings';
 import Money from './Money';
 
+import CharacterData from '../model/CharacterData';
+
 import Clipboard from '../utils/Clipboard';
 import ObjectPaths from '../utils/ObjectPaths';
 
@@ -25,13 +27,8 @@ import wfrpLogo from './wfrp-logo.png';
 class CharacterSheet extends Component {
     constructor(props) {
         super(props);
-        const emptyCharacterData = {
-            player: {},
-            character: {},
-            experiencePoints: {current: 0, total: 0}
-        };
         this.state = {
-            characterData: props.characterData || emptyCharacterData
+            characterData: props.characterData || new CharacterData()
         };
         this.clipboard = props.clipboard || Clipboard;
     }
@@ -75,7 +72,8 @@ class CharacterSheet extends Component {
                                       onChange={changeData => this.handleInputChange(changeData, 'characterData.experiencePoints')}/>
                 </div>
                 <div className="col-12" id="personal-details">
-                    <PersonalDetails/>
+                    <PersonalDetails data={this.state.characterData.personalDetails}
+                                     onChange={changeData => this.handleInputChange(changeData, 'characterData.personalDetails')}/>
                 </div>
                 <div className="col-12" id="character-profile">
                     <CharacterProfile/>

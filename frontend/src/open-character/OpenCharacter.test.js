@@ -1,9 +1,13 @@
 import React from 'react';
 import OpenCharacter from '../open-character';
 import TestUtils from '../utils/TestUtils';
+import CharacterData from "../model/CharacterData";
 
 describe('OpenCharacter', () => {
-    const CHARACTER_DATA = {player: {name: 'playerName'}, character: {name: 'characterName'}, experiencePoints: {current: 0, total: 0}};
+    const CHARACTER_DATA = {
+        ...new CharacterData(),
+        player: {name: 'playerName'}, character: {name: 'characterName'}, experiencePoints: {current: 0, total: 0}
+    };
     const CHARACTER_DATA_JSON = JSON.stringify(CHARACTER_DATA);
     const ENCODED_CHARACTER_DATA = btoa(CHARACTER_DATA_JSON);
     const CORRUPTED_CHARACTER_DATA = 'someCorruptedData';

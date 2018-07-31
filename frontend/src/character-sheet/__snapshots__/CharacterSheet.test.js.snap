@@ -302,6 +302,7 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="2"
           >
             <span>
@@ -313,78 +314,208 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
       <tbody>
         <tr>
           <td>
-            <span>
-              Age
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Age
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="age"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
           <td>
-            <span>
-              Gender
-            </span>
-            :
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Eye Color
-            </span>
-            :
-          </td>
-          <td>
-            <span>
-              Weight
-            </span>
-            :
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Hair Color
-            </span>
-            :
-          </td>
-          <td>
-            <span>
-              Height
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Gender
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="gender"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Star Sign
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Eye Color
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="eyeColor"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </td>
           <td>
-            <span>
-              Number of Siblings
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Weight
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="weight"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Hair Color
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="hairColor"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </td>
+          <td>
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Height
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="height"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Star Sign
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="starSign"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </td>
+          <td>
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Number of Siblings
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="numberOfSiblings"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td
             colSpan="2"
           >
-            <span>
-              Birthplace
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Birthplace
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="birthplace"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td
             colSpan="2"
           >
-            <span>
-              Distinguishing Marks
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Distinguishing Marks
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="distinguishingMarks"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </td>
         </tr>
       </tbody>
@@ -647,7 +778,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
                 name="name"
                 onChange={[Function]}
                 type="text"
-                value={undefined}
+                value=""
               />
             </div>
           </td>
@@ -668,7 +799,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
                 name="gameMaster"
                 onChange={[Function]}
                 type="text"
-                value={undefined}
+                value=""
               />
             </div>
           </td>
@@ -689,7 +820,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
                 name="campaign"
                 onChange={[Function]}
                 type="text"
-                value={undefined}
+                value=""
               />
             </div>
           </td>
@@ -708,7 +839,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
                 name="campaignYear"
                 onChange={[Function]}
                 type="text"
-                value={undefined}
+                value=""
               />
             </div>
           </td>
@@ -749,7 +880,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
                 name="name"
                 onChange={[Function]}
                 type="text"
-                value={undefined}
+                value=""
               />
             </div>
           </td>
@@ -770,7 +901,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
                 name="race"
                 onChange={[Function]}
                 type="text"
-                value={undefined}
+                value=""
               />
             </div>
           </td>
@@ -791,7 +922,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
                 name="currentCareer"
                 onChange={[Function]}
                 type="text"
-                value={undefined}
+                value=""
               />
             </div>
           </td>
@@ -812,7 +943,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
                 name="previousCareers"
                 onChange={[Function]}
                 type="text"
-                value={undefined}
+                value=""
               />
             </div>
           </td>
@@ -889,6 +1020,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
       <thead>
         <tr>
           <th
+            className="header-font-size"
             colSpan="2"
           >
             <span>
@@ -900,78 +1032,208 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
       <tbody>
         <tr>
           <td>
-            <span>
-              Age
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Age
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="age"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
           <td>
-            <span>
-              Gender
-            </span>
-            :
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Eye Color
-            </span>
-            :
-          </td>
-          <td>
-            <span>
-              Weight
-            </span>
-            :
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Hair Color
-            </span>
-            :
-          </td>
-          <td>
-            <span>
-              Height
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Gender
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="gender"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td>
-            <span>
-              Star Sign
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Eye Color
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="eyeColor"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </td>
           <td>
-            <span>
-              Number of Siblings
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Weight
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="weight"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Hair Color
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="hairColor"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </td>
+          <td>
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Height
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="height"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Star Sign
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="starSign"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </td>
+          <td>
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Number of Siblings
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="numberOfSiblings"
+                onChange={[Function]}
+                type="number"
+                value={0}
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td
             colSpan="2"
           >
-            <span>
-              Birthplace
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Birthplace
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="birthplace"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </td>
         </tr>
         <tr>
           <td
             colSpan="2"
           >
-            <span>
-              Distinguishing Marks
-            </span>
-            :
+            <div>
+              <label
+                className="label-font-size"
+              >
+                <span>
+                  Distinguishing Marks
+                </span>
+                :
+              </label>
+              <input
+                className="content-font-size"
+                name="distinguishingMarks"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </td>
         </tr>
       </tbody>

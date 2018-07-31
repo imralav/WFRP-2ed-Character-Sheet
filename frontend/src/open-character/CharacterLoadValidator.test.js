@@ -1,4 +1,5 @@
 import CharacterLoadValidator from './CharacterLoadValidator';
+import CharacterData from '../model/CharacterData';
 
 describe('CharacterLoadValidator', () => {
     let validator;
@@ -28,11 +29,7 @@ describe('CharacterLoadValidator', () => {
             });
         });
         describe('for correct character data', () => {
-            const correctCharacterData = {
-                player: {name: undefined, gameMaster: undefined, campaign: undefined, campaignYear: undefined},
-                character: {name: undefined, race: undefined, currentCareer: undefined, previousCareers: undefined},
-                experiencePoints: {current: 0, total: 0}
-            };
+            const correctCharacterData = new CharacterData();
             it('should return true', () => {
                 expect(validator.isValid(correctCharacterData)).toEqual(true);
             });

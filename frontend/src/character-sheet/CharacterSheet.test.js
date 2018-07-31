@@ -3,6 +3,7 @@ import CharacterSheet from '../character-sheet';
 import Player from './Player';
 import Clipboard from '../utils/Clipboard';
 import TestUtils from '../utils/TestUtils';
+import CharacterData from '../model/CharacterData';
 
 describe('CharacterSheet', () => {
     let component;
@@ -14,6 +15,7 @@ describe('CharacterSheet', () => {
         describe('with no character data and no clipboard', () => {
             beforeEach(() => {
                 characterData = {
+                    ...new CharacterData(),
                     player: {
                         name: 'playerName',
                         gameMaster: 'someGameMaster',
@@ -46,6 +48,7 @@ describe('CharacterSheet', () => {
                     show: jest.fn()
                 };
                 characterData = {
+                    ...new CharacterData(),
                     player: {
                         name: 'someName',
                         gameMaster: 'someGameMaster',
