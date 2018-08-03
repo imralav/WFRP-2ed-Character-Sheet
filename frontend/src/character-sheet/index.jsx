@@ -6,7 +6,7 @@ import Player from './Player';
 import Character from './Character';
 import ExperiencePoints from './ExperiencePoints';
 import PersonalDetails from './PersonalDetails';
-import CharacterProfile from './CharacterProfile';
+import CharacterProfile from './character-profile/index';
 import CombatMovement from './CombatMovement';
 import Weapons from './Weapons';
 import Armour from './Armour';
@@ -76,7 +76,8 @@ class CharacterSheet extends Component {
                                      onChange={changeData => this.handleInputChange(changeData, 'characterData.personalDetails')}/>
                 </div>
                 <div className="col-12" id="character-profile">
-                    <CharacterProfile/>
+                    <CharacterProfile stats={this.state.characterData.characterProfile}
+                                      onChange={(changeData, propertyPathSuffix) => this.handleInputChange(changeData, `characterData.characterProfile.${propertyPathSuffix}`)}/>
                 </div>
                 <div className="col-12" id="combat-movement">
                     <CombatMovement data={this.state.characterData.combatMovement}

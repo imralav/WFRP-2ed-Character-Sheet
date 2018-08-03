@@ -11,6 +11,18 @@ body {
     width: 33.3%;
 }
 
+.w-15p {
+    width: 15%;
+}
+
+.w-10p {
+    width: 10%;
+}
+
+.padding-20px {
+    padding: 20px;
+}
+
 .header-font-size {
     font-size: 2vmax;
 }

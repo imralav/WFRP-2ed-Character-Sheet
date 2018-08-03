@@ -1,0 +1,24 @@
+#character-profile .character-stats-table, #character-profile .character-stats-table * {
+    border: none;
+}
+
+#character-profile .character-stats-table thead tr {
+    background-color: white;
+    color: black;
+}
+
+#character-profile .character-stats-table {
+    text-align: center;
+}
+
+#character-profile .character-stats-table thead tr th:first-child {
+    text-align: left;
+}
+
+#character-profile .character-stats-table tbody tr td:first-child {
+    text-align: right;
+}
+
+#character-profile .character-stats-table tbody tr td:not(:first-child) {
+    border: 1px solid black;
+}

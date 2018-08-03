@@ -1,0 +1,38 @@
+{
+  "pl": {
+    "characterStat.weaponSkill.id": "WW",
+    "characterStat.ballisticSkill.id": "US",
+    "characterStat.strength.id": "K",
+    "characterStat.toughness.id": "Odp",
+    "characterStat.agility.id": "Zr",
+    "characterStat.intelligence.id": "Int",
+    "characterStat.willPower.id": "SW",
+    "characterStat.fellowship.id": "Ogd",
+    "characterStat.attacks.id": "A",
+    "characterStat.wounds.id": "Żyw",
+    "characterStat.strengthBonus.id": "S",
+    "characterStat.toughnessBonus.id": "Wt",
+    "characterStat.movement.id": "Sz",
+    "characterStat.magic.id": "Mag",
+    "characterStat.insanityPoints.id": "PO",
+    "characterStat.fatePoints.id": "PP"
+  },
+  "en": {
+    "characterStat.weaponSkill.id": "WS",
+    "characterStat.ballisticSkill.id": "BS",
+    "characterStat.strength.id": "S",
+    "characterStat.toughness.id": "T",
+    "characterStat.agility.id": "Ag",
+    "characterStat.intelligence.id": "Int",
+    "characterStat.willPower.id": "WP",
+    "characterStat.fellowship.id": "Fel",
+    "characterStat.attacks.id": "A",
+    "characterStat.wounds.id": "W",
+    "characterStat.strengthBonus.id": "SB",
+    "characterStat.toughnessBonus.id": "TB",
+    "characterStat.movement.id": "M",
+    "characterStat.magic.id": "Mag",
+    "characterStat.insanityPoints.id": "IP",
+    "characterStat.fatePoints.id": "FP"
+  }
+}
