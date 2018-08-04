@@ -1,0 +1,59 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px; }
+
+.w-40p {
+  width: 40%; }
+
+.w-33p {
+  width: 33.3%; }
+
+.w-15p {
+  width: 15%; }
+
+.w-10p {
+  width: 10%; }
+
+.padding-20px {
+  padding: 20px; }
+
+.header-font-size {
+  font-size: 2vmax; }
+
+.label-font-size {
+  font-size: 1.75vmax; }
+
+.content-font-size {
+  font-size: 2vmax; }
+
+@media (min-width: 576px) {
+  .header-font-size {
+    font-size: 2vmax; }
+  .label-font-size {
+    font-size: 1.75vmax; }
+  .content-font-size {
+    font-size: 2vmax; } }
+
+@media (min-width: 768px) {
+  .header-font-size {
+    font-size: 1.75vmax; }
+  .label-font-size {
+    font-size: 1.25vmax; }
+  .content-font-size {
+    font-size: 1.5vmax; } }
+
+@media (min-width: 992px) {
+  .header-font-size {
+    font-size: 1.5vmax; }
+  .label-font-size {
+    font-size: 1vmax; }
+  .content-font-size {
+    font-size: 1.25vmax; } }
+
+@media (min-width: 1200px) {
+  .header-font-size {
+    font-size: 1.25vmax; }
+  .label-font-size {
+    font-size: 1vmax; }
+  .content-font-size {
+    font-size: 1.25vmax; } }

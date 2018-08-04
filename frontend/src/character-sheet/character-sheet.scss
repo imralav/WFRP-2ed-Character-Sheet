@@ -1,0 +1,45 @@
+#wfrp-logo-container img {
+    width: 100%;
+    min-width: 450px;
+}
+
+.character-sheet {
+    table {
+        min-width: 450px;
+        width: 100%;
+        border: 1px solid black;
+        margin: 7px 0;
+        thead tr {
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            th {
+                text-align: center;
+                border: 1px solid black;
+            }
+        }
+        tbody tr td {
+            border: 1px solid black;
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                label {
+                    flex-shrink: 0;
+                    margin: unset;
+                }
+            }
+            input {
+                &[type=text], &[type=number] {
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    margin: 0 5px;
+                    outline: none;
+                    flex-grow: 2;
+                    flex-shrink: 6;
+                    min-width: 0;
+                }
+            }
+        }
+    }
+}

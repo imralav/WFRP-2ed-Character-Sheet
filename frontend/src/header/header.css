@@ -1,7 +1,4 @@
-.localeChangeButton {
-    margin: 2px;
-}
-
 .header {
-    margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
+  .header .localeChangeButton {
+    margin: 2px; }

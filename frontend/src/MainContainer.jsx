@@ -11,7 +11,7 @@ import {Provider as AlertProvider} from 'react-alert'
 import BasicAlertTemplate from 'react-alert-template-basic'
 
 import 'bootstrap/dist/css/bootstrap.css'
-import './index.css';
+import './MainContainer.css';
 
 import pl from 'react-intl/locale-data/pl';
 import en from 'react-intl/locale-data/en';

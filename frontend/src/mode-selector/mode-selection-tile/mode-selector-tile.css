@@ -1,16 +1,11 @@
 .modeSelectorTile {
-    margin: 2px;
-    padding: 2px;
-    max-width: 500px;
-}
-
-.modeSelectorTile:hover {
+  margin: 2px;
+  padding: 2px;
+  max-width: 500px; }
+  .modeSelectorTile:hover {
     margin: 1px;
     padding: 3px;
-    border-color: green !important;
-}
-
-.modeSelectorTile img {
+    border-color: green !important; }
+  .modeSelectorTile img {
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
