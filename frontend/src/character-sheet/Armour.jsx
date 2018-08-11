@@ -3,7 +3,7 @@ import {FormattedMessage} from 'react-intl';
 
 export default (props) => {
     return (
-        <table>
+        <table className="section-table">
             <thead>
             <tr>
                 <th>

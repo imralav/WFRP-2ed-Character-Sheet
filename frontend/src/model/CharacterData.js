@@ -1,4 +1,5 @@
 import CharacterStat from "./CharacterStat";
+import Weapon from "./Weapon";
 
 export default class CharacterData {
     constructor() {
@@ -57,7 +58,20 @@ export default class CharacterData {
                     insanityPoints: CharacterStat.builder().withId('characterStat.insanityPoints.id').build(),
                     fatePoints: CharacterStat.builder().withId('characterStat.fatePoints.id').build()
                 }
-            }
+            },
+            weapons: []
         });
+    }
+
+    addEmptyWeaponRow() {
+        this.weapons.push(new Weapon());
+    }
+
+    clean() {
+        this.cleanWeapons();
+    }
+
+    cleanWeapons() {
+        this.weapons = this.weapons.filter(weapon => weapon.isNotEmpty());
     }
 }

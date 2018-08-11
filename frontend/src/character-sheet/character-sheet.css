@@ -2,32 +2,36 @@
   width: 100%;
   min-width: 450px; }
 
-.character-sheet table {
+.character-sheet input[type=text], .character-sheet input[type=number] {
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  min-width: 0; }
+
+.character-sheet table.section-table {
   min-width: 450px;
   width: 100%;
   border: 1px solid black;
   margin: 7px 0; }
-  .character-sheet table thead tr {
+  .character-sheet table.section-table > thead > tr {
     background-color: black;
     color: white;
     text-transform: uppercase; }
-    .character-sheet table thead tr th {
-      text-align: center;
+    .character-sheet table.section-table > thead > tr > th {
       border: 1px solid black; }
-  .character-sheet table tbody tr td {
+  .character-sheet table.section-table > tbody > tr > td {
     border: 1px solid black; }
-    .character-sheet table tbody tr td div {
+    .character-sheet table.section-table > tbody > tr > td > div {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .character-sheet table tbody tr td div label {
+      .character-sheet table.section-table > tbody > tr > td > div label {
         flex-shrink: 0;
         margin: unset; }
-    .character-sheet table tbody tr td input[type=text], .character-sheet table tbody tr td input[type=number] {
-      border: none;
-      border-bottom: 1px solid gray;
-      margin: 0 5px;
-      outline: none;
-      flex-grow: 2;
-      flex-shrink: 6;
-      min-width: 0; }
+      .character-sheet table.section-table > tbody > tr > td > div input[type=text], .character-sheet table.section-table > tbody > tr > td > div input[type=number] {
+        margin: 0 5px;
+        flex-grow: 2;
+        flex-shrink: 6; }
+
+.character-sheet table thead tr th {
+  text-align: center; }

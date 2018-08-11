@@ -7,7 +7,7 @@ export default function CombatMovement(props) {
         props.onChange(changeData);
     };
     return (
-        <table>
+        <table className="section-table">
             <thead>
             <tr>
                 <th colSpan="3" className="header-font-size">

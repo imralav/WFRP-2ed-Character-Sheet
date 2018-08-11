@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Player should match previous snapshot 1`] = `
-<table>
+<table
+  className="section-table"
+>
   <thead>
     <tr>
       <th

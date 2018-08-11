@@ -9,9 +9,9 @@ export default function CharacterStatsTable(props) {
         <table className="character-stats-table">
             <thead>
             <tr>
-                <th className="no-border w10-p label-font-size">{props.tableName}</th>
+                <th className="no-border w-10p label-font-size">{props.tableName}</th>
                 {
-                    stats.map(stat => <th className="no-right-border no-top-border label-font-size"><FormattedMessage id={stat[1].id} defaultMessage="X"/></th>)
+                    stats.map((stat, index) => <th key={index} className="no-right-border no-top-border label-font-size"><FormattedMessage id={stat[1].id} defaultMessage="X"/></th>)
                 }
             </tr>
             </thead>

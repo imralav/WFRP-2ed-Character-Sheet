@@ -1,0 +1,33 @@
+#weapons {
+  table {
+    thead {
+      tr {
+        th {
+          width: 14%;
+        }
+      }
+    }
+    tbody {
+      tr.borderless td {
+        border-top: none;
+        &:not(:last-child) {
+          border-right: none;
+        }
+        &:not(:first-child) {
+          border-left: none;
+        }
+        .plusIconContainer {
+          margin-right: 5px;
+        }
+      }
+      tr {
+        td {
+          input {
+            width: 100%;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

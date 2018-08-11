@@ -24,7 +24,18 @@ export default class CharacterLoadValidator {
     }
 
     hasCorrectPropertiesForSection(sectionData, sectionName) {
-        const currentProperties = Object.keys(this.expectedCharacterDataModel[sectionName]);
+        let section = this.expectedCharacterDataModel[sectionName];
+        if(_.isArray(section)) {
+            return true;
+        }
+        if(_.isObject(section)) {
+            return CharacterLoadValidator.checkSectionAsObject(section, sectionData);
+        }
+        return false;
+    }
+
+    static checkSectionAsObject(section, sectionData) {
+        const currentProperties = Object.keys(section);
         const sectionKeys = Object.keys(sectionData);
         for(let propertyName of sectionKeys) {
             if(currentProperties.indexOf(propertyName) < 0) {

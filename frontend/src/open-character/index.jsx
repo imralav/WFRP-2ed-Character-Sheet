@@ -4,6 +4,10 @@ import {FormattedMessage} from 'react-intl';
 import CharacterLoadValidator from './CharacterLoadValidator';
 import CharacterSheet from '../character-sheet';
 
+import CharacterDataMapper from './CharacterDataMapper';
+
+import { Base64 } from 'js-base64';
+
 import './open-character.css';
 
 export default class OpenCharacter extends Component {
@@ -40,8 +44,9 @@ export default class OpenCharacter extends Component {
 
     decodeCharacterData(unparsedCharacterData) {
         try {
-            let decodedCharacterData = atob(unparsedCharacterData);
-            return JSON.parse(decodedCharacterData);
+            const decodedCharacterData = Base64.decode(unparsedCharacterData);
+            const parsedCharacterData = JSON.parse(decodedCharacterData);
+            return CharacterDataMapper.map(parsedCharacterData);
         } catch(error) {
             return undefined;
         }

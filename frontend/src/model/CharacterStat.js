@@ -36,8 +36,8 @@ class CharacterStatBuilder {
 }
 
 export default class CharacterStat {
-    constructor() {
-        Object.assign(this, {
+    constructor(originalStat) {
+        Object.assign(this, originalStat || {
             id: '',
             starting: 0,
             advance: 0,

@@ -9,7 +9,7 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     id="character-json"
   >
     <button
-      className="btn btn-dark btn-sm content-font-size"
+      className="btn btn-dark btn-sm label-font-size"
       onClick={[Function]}
     >
       <span>
@@ -30,7 +30,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="player"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -133,7 +135,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="character"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -237,7 +241,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="experience-points"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -298,7 +304,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="personal-details"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -525,23 +533,813 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="character-profile"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
-          <th>
+          <th
+            className="header-font-size"
+          >
             <span>
               Character Profile
             </span>
           </th>
         </tr>
       </thead>
+      <tbody>
+        <tr>
+          <td
+            className="padding-20px"
+          >
+            <table
+              className="character-stats-table"
+            >
+              <thead>
+                <tr>
+                  <th
+                    className="no-border w-10p label-font-size"
+                  >
+                    <span>
+                      Main
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Starting
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="weaponSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="ballisticSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strength"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughness"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="agility"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="intelligence"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="willPower"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fellowship"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Advance
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="weaponSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="ballisticSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strength"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughness"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="agility"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="intelligence"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="willPower"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fellowship"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Current
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="weaponSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="ballisticSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strength"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughness"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="agility"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="intelligence"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="willPower"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fellowship"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              className="character-stats-table"
+            >
+              <thead>
+                <tr>
+                  <th
+                    className="no-border w-10p label-font-size"
+                  >
+                    <span>
+                      Secondary
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Starting
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="attacks"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="wounds"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strengthBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughnessBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="movement"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="magic"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="insanityPoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fatePoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Advance
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="attacks"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="wounds"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strengthBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughnessBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="movement"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="magic"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="insanityPoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fatePoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Current
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="attacks"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="wounds"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strengthBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughnessBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="movement"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="magic"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="insanityPoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fatePoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <div
     className="col-12"
     id="combat-movement"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -627,23 +1425,90 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="weapons"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
-          <th>
+          <th
+            className="header-font-size"
+            colSpan="7"
+          >
             <span>
               Weapons
             </span>
           </th>
         </tr>
       </thead>
+      <tbody>
+        <tr
+          className="borderless label-font-size"
+        >
+          <td>
+            <span>
+              Name
+            </span>
+          </td>
+          <td>
+            <span>
+              Enc
+            </span>
+          </td>
+          <td>
+            <span>
+              Group
+            </span>
+          </td>
+          <td>
+            <span>
+              Damage
+            </span>
+          </td>
+          <td>
+            <span>
+              Range
+            </span>
+          </td>
+          <td>
+            <span>
+              Reload
+            </span>
+          </td>
+          <td>
+            <span>
+              Qualities
+            </span>
+          </td>
+        </tr>
+        <tr
+          className="borderless"
+        >
+          <td
+            colSpan="7"
+          >
+            <button
+              className="btn btn-light btn-sm label-font-size"
+              onClick={[Function]}
+            >
+              <span
+                className="plusIconContainer"
+              />
+              <span>
+                Add new row
+              </span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <div
     className="col-12"
     id="armour"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -659,7 +1524,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="armour-points"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -675,7 +1542,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="skills"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -691,7 +1560,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="talents"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -707,7 +1578,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="trappings"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -723,7 +1596,9 @@ exports[`CharacterSheet setup with character data and clipboard should match pre
     className="col-12"
     id="money"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -773,7 +1648,7 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     id="character-json"
   >
     <button
-      className="btn btn-dark btn-sm content-font-size"
+      className="btn btn-dark btn-sm label-font-size"
       onClick={[Function]}
     >
       <span>
@@ -794,7 +1669,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="player"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -897,7 +1774,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="character"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -1001,7 +1880,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="experience-points"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -1062,7 +1943,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="personal-details"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -1289,23 +2172,813 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="character-profile"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
-          <th>
+          <th
+            className="header-font-size"
+          >
             <span>
               Character Profile
             </span>
           </th>
         </tr>
       </thead>
+      <tbody>
+        <tr>
+          <td
+            className="padding-20px"
+          >
+            <table
+              className="character-stats-table"
+            >
+              <thead>
+                <tr>
+                  <th
+                    className="no-border w-10p label-font-size"
+                  >
+                    <span>
+                      Main
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Starting
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="weaponSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="ballisticSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strength"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughness"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="agility"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="intelligence"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="willPower"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fellowship"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Advance
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="weaponSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="ballisticSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strength"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughness"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="agility"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="intelligence"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="willPower"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fellowship"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Current
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="weaponSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="ballisticSkill"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strength"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughness"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="agility"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="intelligence"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="willPower"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fellowship"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              className="character-stats-table"
+            >
+              <thead>
+                <tr>
+                  <th
+                    className="no-border w-10p label-font-size"
+                  >
+                    <span>
+                      Secondary
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                  <th
+                    className="no-right-border no-top-border label-font-size"
+                  >
+                    <span>
+                      X
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Starting
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="attacks"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="wounds"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strengthBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughnessBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="movement"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="magic"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="insanityPoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fatePoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Advance
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="attacks"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="wounds"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strengthBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughnessBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="movement"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="magic"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="insanityPoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fatePoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="label-font-size"
+                  >
+                    <span>
+                      Current
+                    </span>
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="attacks"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="wounds"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="strengthBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="toughnessBonus"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="movement"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="magic"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="insanityPoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                  <td
+                    className="w-10p content-font-size"
+                  >
+                    <input
+                      className="content-font-size"
+                      min="0"
+                      name="fatePoints"
+                      onChange={[Function]}
+                      type="number"
+                      value={0}
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <div
     className="col-12"
     id="combat-movement"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th
@@ -1391,23 +3064,90 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="weapons"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
-          <th>
+          <th
+            className="header-font-size"
+            colSpan="7"
+          >
             <span>
               Weapons
             </span>
           </th>
         </tr>
       </thead>
+      <tbody>
+        <tr
+          className="borderless label-font-size"
+        >
+          <td>
+            <span>
+              Name
+            </span>
+          </td>
+          <td>
+            <span>
+              Enc
+            </span>
+          </td>
+          <td>
+            <span>
+              Group
+            </span>
+          </td>
+          <td>
+            <span>
+              Damage
+            </span>
+          </td>
+          <td>
+            <span>
+              Range
+            </span>
+          </td>
+          <td>
+            <span>
+              Reload
+            </span>
+          </td>
+          <td>
+            <span>
+              Qualities
+            </span>
+          </td>
+        </tr>
+        <tr
+          className="borderless"
+        >
+          <td
+            colSpan="7"
+          >
+            <button
+              className="btn btn-light btn-sm label-font-size"
+              onClick={[Function]}
+            >
+              <span
+                className="plusIconContainer"
+              />
+              <span>
+                Add new row
+              </span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <div
     className="col-12"
     id="armour"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -1423,7 +3163,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="armour-points"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -1439,7 +3181,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="skills"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -1455,7 +3199,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="talents"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -1471,7 +3217,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="trappings"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>
@@ -1487,7 +3235,9 @@ exports[`CharacterSheet setup with no character data and no clipboard should mat
     className="col-12"
     id="money"
   >
-    <table>
+    <table
+      className="section-table"
+    >
       <thead>
         <tr>
           <th>

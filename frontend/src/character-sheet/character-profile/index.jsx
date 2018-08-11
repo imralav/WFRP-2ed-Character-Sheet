@@ -4,7 +4,7 @@ import CharacterStatsTable from './character-stats-table/index';
 
 export default (props) => {
     return (
-        <table>
+        <table className="section-table">
             <thead>
             <tr>
                 <th className="header-font-size">

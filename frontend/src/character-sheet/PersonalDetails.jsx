@@ -7,7 +7,7 @@ export default function PersonalDetails(props) {
         props.onChange(changeData);
     };
     return (
-        <table>
+        <table className="section-table">
             <thead>
             <tr>
                 <th colSpan="2" className="header-font-size">

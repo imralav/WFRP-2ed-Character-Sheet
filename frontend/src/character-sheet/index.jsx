@@ -24,6 +24,9 @@ import ObjectPaths from '../utils/ObjectPaths';
 import './character-sheet.css';
 import wfrpLogo from './wfrp-logo.png';
 
+import lodash from 'lodash';
+import { Base64 } from 'js-base64';
+
 class CharacterSheet extends Component {
     constructor(props) {
         super(props);
@@ -34,8 +37,10 @@ class CharacterSheet extends Component {
     }
 
     copyCharacterJsonToClipboard() {
-        const characterDataJson = JSON.stringify(this.state.characterData);
-        let encodedCharacterData = btoa(characterDataJson);
+        const characterData = lodash.cloneDeep(this.state.characterData);
+        characterData.clean();
+        const characterDataJson = JSON.stringify(characterData);
+        let encodedCharacterData = Base64.encode(characterDataJson);
         this.clipboard.copyTextToClipboard(encodedCharacterData);
         if (this.props.alert) {
             this.props.alert.show(<FormattedMessage id="character.data.copied" defaultMessage="Character data copied to clipboard"/>)
@@ -44,16 +49,28 @@ class CharacterSheet extends Component {
 
     handleInputChange(changeData, objectPath) {
         let propertyPath = `${objectPath}.${changeData.name}`;
-        const newState = {...this.state};
+        const newState = lodash.cloneDeep(this.state);
         ObjectPaths.setOnPath(newState, propertyPath, changeData.value);
         this.setState(newState);
     }
+
+    addWeaponRow = () => {
+        const newState = lodash.cloneDeep(this.state);
+        newState.characterData.addEmptyWeaponRow();
+        this.setState(newState);
+    };
+
+    handleChangeOnWeapon = (index, changeData) => {
+        const newState = lodash.cloneDeep(this.state);
+        ObjectPaths.setOnPath(newState.characterData.weapons[index], changeData.name, changeData.value);
+        this.setState(newState);
+    };
 
     render() {
         return (
             <div className="row character-sheet">
                 <div className="col-12" id="character-json">
-                    <button className="btn btn-dark btn-sm content-font-size" onClick={() => this.copyCharacterJsonToClipboard()}>
+                    <button className="btn btn-dark btn-sm label-font-size" onClick={() => this.copyCharacterJsonToClipboard()}>
                         <FormattedMessage id="copy-character-data-to-clipboard" defaultMessage="Copy character data to clipboard for later use"/>
                     </button>
                 </div>
@@ -84,7 +101,7 @@ class CharacterSheet extends Component {
                                     onChange={changeData => this.handleInputChange(changeData, 'characterData.combatMovement')}/>
                 </div>
                 <div className="col-12" id="weapons">
-                    <Weapons/>
+                    <Weapons data={this.state.characterData.weapons} addWeaponRow={this.addWeaponRow} handleChange={this.handleChangeOnWeapon}/>
                 </div>
                 <div className="col-12" id="armour">
                     <Armour/>

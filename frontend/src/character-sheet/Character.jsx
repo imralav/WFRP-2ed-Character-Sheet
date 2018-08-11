@@ -7,7 +7,7 @@ export default function Character(props) {
         props.onChange(changeData);
     };
     return (
-        <table>
+        <table className="section-table">
             <thead>
             <tr>
                 <th className="header-font-size">

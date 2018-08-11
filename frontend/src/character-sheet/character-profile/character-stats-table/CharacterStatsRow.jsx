@@ -14,12 +14,10 @@ export default function CharacterStatsRow(props) {
                 {rowName}
             </td>
             {
-                Object.keys(stats).map(statName => (
-                    <td className="w-10p content-font-size">
-                        <div>
-                            <input type="number" value={stats[statName][rowId]} name={statName} onChange={event => handleChange(event)}
-                                   className="content-font-size"/>
-                        </div>
+                Object.keys(stats).map((statName, index) => (
+                    <td className="w-10p content-font-size" key={index}>
+                        <input type="number" value={stats[statName][rowId]} name={statName} onChange={event => handleChange(event)}
+                               className="content-font-size" min="0"/>
                     </td>
                 ))
             }
