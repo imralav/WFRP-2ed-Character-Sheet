@@ -60,6 +60,12 @@ class CharacterSheet extends Component {
         this.setState(newState);
     };
 
+    deleteWeaponRow = index => {
+        const newState = lodash.cloneDeep(this.state);
+        newState.characterData.deleteWeapon(index);
+        this.setState(newState);
+    };
+
     handleChangeOnWeapon = (index, changeData) => {
         const newState = lodash.cloneDeep(this.state);
         ObjectPaths.setOnPath(newState.characterData.weapons[index], changeData.name, changeData.value);
@@ -101,7 +107,7 @@ class CharacterSheet extends Component {
                                     onChange={changeData => this.handleInputChange(changeData, 'characterData.combatMovement')}/>
                 </div>
                 <div className="col-12" id="weapons">
-                    <Weapons data={this.state.characterData.weapons} addWeaponRow={this.addWeaponRow} handleChange={this.handleChangeOnWeapon}/>
+                    <Weapons data={this.state.characterData.weapons} addWeaponRow={this.addWeaponRow} handleChange={this.handleChangeOnWeapon} deleteWeapon={this.deleteWeaponRow}/>
                 </div>
                 <div className="col-12" id="armour">
                     <Armour/>

@@ -67,6 +67,10 @@ export default class CharacterData {
         this.weapons.push(new Weapon());
     }
 
+    deleteWeapon(index) {
+        this.weapons.splice(index, 1);
+    }
+
     clean() {
         this.cleanWeapons();
     }

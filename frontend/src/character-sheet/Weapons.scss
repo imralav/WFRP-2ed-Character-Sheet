@@ -21,6 +21,9 @@
         }
       }
       tr {
+        &.clickable:hover {
+          background-color: black;
+        }
         td {
           input {
             width: 100%;
