@@ -9,7 +9,7 @@ import PersonalDetails from './PersonalDetails';
 import CharacterProfile from './character-profile/index';
 import CombatMovement from './CombatMovement';
 import Weapons from './Weapons';
-import Armour from './Armour';
+import Armour from './armour/Armour';
 import ArmourPoints from './ArmourPoints';
 import Skills from './Skills';
 import Talents from './Talents';
@@ -110,7 +110,7 @@ class CharacterSheet extends Component {
                     <Weapons data={this.state.characterData.weapons} addWeaponRow={this.addWeaponRow} handleChange={this.handleChangeOnWeapon} deleteWeapon={this.deleteWeaponRow}/>
                 </div>
                 <div className="col-12" id="armour">
-                    <Armour/>
+                    <Armour data={this.state.characterData.armour}/>
                 </div>
                 <div className="col-12" id="armour-points">
                     <ArmourPoints/>

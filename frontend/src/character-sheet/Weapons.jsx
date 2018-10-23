@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
 import './Weapons.css';
-import AddRowButton from './AddRowButton';
-import RemoveRowButton from './RemoveRowButton';
+import AddRowButton from './buttons/AddRowButton';
+import RemoveRowButton from './buttons/RemoveRowButton';
 
 export default class Weapons extends Component {
     constructor(props) {

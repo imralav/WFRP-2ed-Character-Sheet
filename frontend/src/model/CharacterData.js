@@ -1,5 +1,6 @@
 import CharacterStat from "./CharacterStat";
 import Weapon from "./Weapon";
+import Armour from "./Armour";
 
 export default class CharacterData {
     constructor() {
@@ -59,7 +60,14 @@ export default class CharacterData {
                     fatePoints: CharacterStat.builder().withId('characterStat.fatePoints.id').build()
                 }
             },
-            weapons: []
+            weapons: [],
+            armour: {
+                basic: {
+                    type: '',
+                    points: ''
+                },
+                advanced: []
+            }
         });
     }
 
@@ -71,11 +79,24 @@ export default class CharacterData {
         this.weapons.splice(index, 1);
     }
 
+    addEmptyArmourRow() {
+        this.armour.advanced.push(new Armour());
+    }
+
+    deleteArmour(index) {
+        this.armour.advanced.splice(index, 1);
+    }
+
     clean() {
         this.cleanWeapons();
+        this.cleanArmour();
     }
 
     cleanWeapons() {
         this.weapons = this.weapons.filter(weapon => weapon.isNotEmpty());
+    }
+
+    cleanArmour() {
+        this.armour.advanced = this.armour.advanced.filter(armour => armour.isNotEmpty());
     }
 }
