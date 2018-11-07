@@ -3,6 +3,26 @@
     "reading-writing": "Czytanie i pisanie"
   },
   "en": {
-    "reading-writing": "Reading and writing"
+    "reading-writing": "Reading and writing",
+    "animal-care": "Animal Care (Int)",
+    "charm": "Charm (Fel)",
+    "command": "Command (Fel)",
+    "concealment": "Concealment (Ag)",
+    "consume-alcohol": "Consule Alcohol (T)",
+    "disguise": "Disguise (Fel)",
+    "drive": "Drive (S)",
+    "evaluate": "Evaluate (Int)",
+    "gamble": "Gamble (Int)",
+    "gossip": "Gossip (Fel)",
+    "haggle": "Haggle (Fel)",
+    "intimidate": "Intimidate (S)",
+    "outdoor-survival": "Outdoor Survival (Int)",
+    "perception": "Perception (Int)",
+    "ride": "Ride (Ag)",
+    "row": "Row (S)",
+    "scale-sheer-surface": "Scale Sheer Surface (S)",
+    "search": "Search (Int)",
+    "silent-move": "Silent Move (Ag)",
+    "swim": "Swim (S)"
   }
 }

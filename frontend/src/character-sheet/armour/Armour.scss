@@ -1,0 +1,26 @@
+#armour {
+  tr.armour-section-header-row {
+    td {
+      padding-top: 10px;
+    }
+  }
+  tr.basic-armour-row {
+    td {
+      width: 50%;
+    }
+  }
+  tr.advanced-armour-header-row {
+    border: none;
+  }
+  tr.advanced-armour-row {
+    &.clickable:hover {
+      background-color: black;
+    }
+    td {
+      input {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+}

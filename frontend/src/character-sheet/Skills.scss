@@ -1,0 +1,11 @@
+#skills {
+  tbody td {
+    border: none;
+    input[type=text] {
+      border: none;
+      border-bottom: 1px solid gray;
+      outline: none;
+      min-width: 0;
+    }
+  }
+}
