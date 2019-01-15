@@ -50,7 +50,7 @@ export default class Trappings extends Component {
                         <FormattedMessage id="item" defaultMessage="Item"/>
                     </td>
                     <td className="w-5p">
-                        <FormattedMessage id="encurbance" defaultMessage="Enc"/>
+                        <FormattedMessage id="enc" defaultMessage="Enc"/>
                     </td>
                     <td className="w-50p">
                         <FormattedMessage id="description" defaultMessage="Description"/>

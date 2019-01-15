@@ -1,9 +1,29 @@
 {
   "pl": {
-    "reading-writing": "Czytanie i pisanie"
+    "reading-writing": "Czytanie i pisanie (Int)",
+    "animal-care": "Opieka nad zwierzętami (Int)",
+    "charm": "Przekonywanie (Ogd)",
+    "command": "Dowodzenie (Ogd)",
+    "concealment": "Ukrywanie się (Zr)",
+    "consume-alcohol": "Mocna głowa (Odp)",
+    "disguise": "Charakteryzacja (Ogd)",
+    "drive": "Powożenie (K)",
+    "evaluate": "Wycena (Int)",
+    "gamble": "Hazard (Int)",
+    "gossip": "Plotkowanie (Ogd)",
+    "haggle": "Targowanie (Ogd)",
+    "intimidate": "Zastraszanie (K)",
+    "outdoor-survival": "Sztuka przetrwania (Int)",
+    "perception": "Spostrzegawczość (Int)",
+    "ride": "Jeździectwo (Zr)",
+    "row": "Wioślarstwo (K)",
+    "scale-sheer-surface": "Wspinaczka (K)",
+    "search": "Przeszukiwanie (Int)",
+    "silent-move": "Skradanie się (Zr)",
+    "swim": "Pływanie (K)"
   },
   "en": {
-    "reading-writing": "Reading and writing",
+    "reading-writing": "Reading and writing (Int)",
     "animal-care": "Animal Care (Int)",
     "charm": "Charm (Fel)",
     "command": "Command (Fel)",
