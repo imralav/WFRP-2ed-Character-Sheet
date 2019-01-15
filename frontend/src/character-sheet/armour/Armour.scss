@@ -14,7 +14,10 @@
   }
   tr.advanced-armour-row {
     &.clickable:hover {
-      background-color: black;
+      td {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
     }
     td {
       input {

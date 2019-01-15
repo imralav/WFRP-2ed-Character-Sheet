@@ -1,0 +1,40 @@
+#spell-grimoire {
+  div.row {
+    table {
+      width: 100%;
+      border: 1px solid black;
+      tr {
+        td {
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            label {
+              flex-shrink: 0;
+              margin: unset;
+            }
+            input {
+              &[type=text], &[type=number] {
+                margin: 0 5px;
+                flex-grow: 2;
+                flex-shrink: 6;
+              }
+            }
+            textarea {
+              resize: none;
+              height: 50px;
+              margin: 0 5px;
+              flex-grow: 2;
+              flex-shrink: 6;
+            }
+          }
+        }
+      }
+    }
+    div.clickable:hover {
+      table {
+        border: 2px solid black;
+      }
+    }
+  }
+}

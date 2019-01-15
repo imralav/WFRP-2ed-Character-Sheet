@@ -31,13 +31,15 @@ const DEFAULT_SKILLS = {
         createSkill('silent-move'),
         createSkill('swim')
     ],
-    advanced: [
-        createSkill('')
-    ]
+    advanced: []
 };
 
 export const ADVANCE_BASIC_SKILL_ACTION = 'ADVANCE_BASIC_SKILL_ACTION';
 export const ADVANCE_ADVANCED_SKILL_ACTION = 'ADVANCE_ADVANCED_SKILL_ACTION';
+export const UPDATE_ADVANCED_SKILL_ACTION = 'UPDATE_ADVANCED_SKILL_ACTION';
+export const UPDATE_BASIC_SKILL_ACTION = 'UPDATE_BASIC_SKILL_ACTION';
+export const ADD_ADVANCED_SKILL_ROW_ACTION = 'ADD_ADVANCED_SKILL_ROW_ACTION';
+export const DELETE_ADVANCED_SKILL_ROW_ACTION = 'DELETE_ADVANCED_SKILL_ROW_ACTION';
 
 export default (state = DEFAULT_SKILLS, action) => {
     const newState = lodash.cloneDeep(state);
@@ -47,6 +49,18 @@ export default (state = DEFAULT_SKILLS, action) => {
             break;
         case ADVANCE_ADVANCED_SKILL_ACTION:
             newState.advanced[action.index].level = action.level;
+            break;
+        case UPDATE_BASIC_SKILL_ACTION:
+            newState.basic[action.index][action.propertyName] = action.value;
+            break;
+        case UPDATE_ADVANCED_SKILL_ACTION:
+            newState.advanced[action.index][action.propertyName] = action.value;
+            break;
+        case ADD_ADVANCED_SKILL_ROW_ACTION:
+            newState.advanced.push(createSkill(''));
+            break;
+        case DELETE_ADVANCED_SKILL_ROW_ACTION:
+            newState.advanced.splice(action.index, 1);
             break;
     }
     return newState;

@@ -31,6 +31,10 @@ import weapons from "./model/Weapons";
 import armour from './model/Armour';
 import armourPoints from './model/ArmourPoints';
 import skills from './model/Skills';
+import talents from './model/Talents';
+import trappings from './model/Trappings';
+import money from './model/Money';
+import spells from './model/Spells';
 
 addLocaleData(pl);
 addLocaleData(en);
@@ -57,7 +61,11 @@ const characterData = (state = {}, action) => {
         weapons: weapons(state.weapons, action),
         armour: armour(state.armour, action),
         armourPoints: armourPoints(state.armourPoints, action),
-        skills: skills(state.skills, action)
+        skills: skills(state.skills, action),
+        talents: talents(state.talents, action),
+        trappings: trappings(state.trappings, action),
+        money: money(state.money, action),
+        spells: spells(state.spells, action)
     };
 };
 

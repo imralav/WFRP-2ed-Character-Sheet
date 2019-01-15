@@ -1,11 +1,20 @@
 #skills {
-  tbody td {
-    border: none;
-    input[type=text] {
+  tbody tr {
+    td {
+      &.checkbox-container {
+        text-align: center;
+      }
       border: none;
-      border-bottom: 1px solid gray;
-      outline: none;
-      min-width: 0;
+      input[type=text] {
+        border: none;
+        border-bottom: 1px solid gray;
+        outline: none;
+        min-width: 0;
+        width: 100%;
+      }
+    }
+    &.clickable:hover {
+      border: 1px solid black;
     }
   }
 }

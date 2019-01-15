@@ -2,6 +2,12 @@ body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px; }
 
+.w-90p {
+  width: 90%; }
+
+.w-50p {
+  width: 50%; }
+
 .w-40p {
   width: 40%; }
 
