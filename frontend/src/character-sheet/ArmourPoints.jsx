@@ -11,7 +11,7 @@ export default (props) => {
             <thead>
             <tr>
                 <th colSpan="6" className="header-font-size">
-                    <FormattedMessage id="experience-points" defaultMessage="Experience Points"/>
+                    <FormattedMessage id="armour-points" defaultMessage="Armour Points"/>
                 </th>
             </tr>
             </thead>
